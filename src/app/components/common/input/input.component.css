@@ -1,0 +1,9 @@
+.div-input {
+    background-color: blueviolet;
+    border-radius: 1px;
+    display: flex;
+    .input {
+        align-items: center;
+        width: 100%;
+    }
+}

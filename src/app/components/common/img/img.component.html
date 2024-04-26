@@ -1,0 +1,10 @@
+<!-- <p>img works!</p> -->
+<div [class]="imgClasses" [style]="imgCXStyle">
+    <div>
+        <img src={{img.src}} alt={{img.alt}}/>
+    </div>
+    @if(label) {
+        <div class="label">{{label}}</div>
+    }
+</div>
+

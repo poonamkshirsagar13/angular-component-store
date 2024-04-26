@@ -1,0 +1,12 @@
+.container{
+    border: solid 1px black;
+    background-color: aqua;
+    justify-content: center;
+}
+.ee{
+    display: inline-flex;
+}
+
+.imgs{
+    display: inline-flex;
+}
