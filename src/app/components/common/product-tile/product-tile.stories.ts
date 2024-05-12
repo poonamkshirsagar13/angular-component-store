@@ -1,9 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/angular';
-import { DiscriptionComponent } from './discription.component';
 
-const meta: Meta<DiscriptionComponent> = {
-    title: 'Discription Component',
-    component: DiscriptionComponent,
+import type { Meta, StoryObj } from '@storybook/angular';
+import { ProductTileComponent } from './product-tile.component';
+
+const meta: Meta<ProductTileComponent> = {
+    title: 'ProductTile Component',
+    component: ProductTileComponent,
     tags: ['autodocs'],
     argTypes: {
     },
@@ -12,12 +13,9 @@ const meta: Meta<DiscriptionComponent> = {
 };
 
 export default meta;
-type Story = StoryObj<DiscriptionComponent>;
+type Story = StoryObj<ProductTileComponent>;
 
 export const text: Story = {
     args: {
-        // desc1:undefined,
-        // desc2:undefined,
-        // disStyle:undefined
     }
 };

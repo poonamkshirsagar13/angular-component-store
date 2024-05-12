@@ -37,8 +37,7 @@ export const WithAnImageAlien: Story = {
         img: imgAlien,
         label: 'Alien Vs Predeater',
         enableBackground: true,
-        // backgroundColor: '',
-        // imgCXStyle: 'backgroundColor: black; padding: 5px; margin: 10px'
+        imgSize: 'small'
     }
 };
 

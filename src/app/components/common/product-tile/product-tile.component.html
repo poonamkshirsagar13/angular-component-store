@@ -1,0 +1,29 @@
+<div class="container">
+    <div  class="row align-items-center">
+        <div class="main-img" class="col-sm-4" align="center">
+            <app-img [img]="product" [imgSize]="'small'"></app-img>
+        </div>
+    </div>
+
+    <div class="row align-items-center">    
+        <div class="des"  class="col-sm-4" align="center">
+            <app-discription [desc1]="desc_p" [desc2]="desc_p2"></app-discription>
+        </div>
+    </div>
+
+    <div class="row align-items-center">    
+        <div class="des"  class="col-sm-4" align="center">
+         <div class="price"><app-price [label1]="labelOne" [label2]="labelTwo"></app-price></div>
+        </div>
+    </div>
+    <div class="row align-items-center">   
+        <div class="img-tile" class="col-sm-4" align="center">
+            <div style="display: inline-flex;">
+                <app-img  [img]="productImgOne"></app-img>
+                <app-img  [img]="productImgTwo"></app-img>
+                <app-img  [img]="productImgThr"></app-img>
+            </div>
+            
+        </div>
+    </div>
+</div>

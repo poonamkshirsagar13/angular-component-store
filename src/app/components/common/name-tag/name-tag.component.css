@@ -4,10 +4,10 @@
     font-size: small;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    background-color: bisque;
+    /* background-color: bisque; */
     justify-items: center;
     border-radius: 1px;
-    border: solid 1px burlywood;
+    /* border: solid 1px burlywood; */
 }
 .name-medium {
     height: 20px;
@@ -15,10 +15,10 @@
     font-size: medium;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: oblique;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     justify-items: center;
     border-radius: 1px;
-    border: solid 1px bisque;
+    /* border: solid 1px bisque; */
 }
 .name-large {
     height: 20px;
@@ -26,9 +26,9 @@
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    background-color: beige;
+    /* background-color: beige; */
     border-radius: 1px;
-    border: solid 1px blanchedalmond;
+    /* border: solid 1px blanchedalmond; */
     align-items: center;
 }
 .name-parent {
@@ -37,7 +37,7 @@
     font-size: medium;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: oblique;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     border-radius: 1px;
-    border: solid 1px bisque;
+    /* border: solid 1px bisque; */
 }

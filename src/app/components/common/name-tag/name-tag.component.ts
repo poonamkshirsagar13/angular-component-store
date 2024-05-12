@@ -1,11 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component,Input,Output,EventEmitter } from '@angular/core';
-import { fn } from '@storybook/test';
 
 @Component({
   selector: 'app-name-tag',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './name-tag.component.html',
   styleUrl: './name-tag.component.css'
 })
@@ -15,7 +13,7 @@ export class NameTagComponent {
    *
    * @required
    */
-  @Input() label:string='';
+  @Input() labelName:string='';
   @Input() size:'small'|'medium'|'large'|'parent'= 'parent';
   @Input() nameStyle: string= '';
 

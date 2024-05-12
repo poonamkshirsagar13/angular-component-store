@@ -3,8 +3,9 @@
     background-color: aqua;
     justify-content: center;
 }
-.ee{
-    display: inline-flex;
+.price-tag{
+    display: inline;
+    border: 1px solid firebrick;
 }
 
 .imgs{

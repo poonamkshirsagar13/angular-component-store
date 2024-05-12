@@ -23,4 +23,6 @@ export class HeaderComponent {
     src: 'assets/imgs/cart.svg',
     alt: 'cartLogo Image'
   };
+  @Input() label:string = "SUPER"
+  
 }

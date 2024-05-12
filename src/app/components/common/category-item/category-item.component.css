@@ -1,0 +1,18 @@
+.sec-box {
+    display: inline-flex;
+    background-color: blue;
+}
+
+.label {
+    /* width: 65%; */
+    border: 1px solid black;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.picture {
+    /* width: 35%; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    background-color: brown;
+}

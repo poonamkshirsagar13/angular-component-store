@@ -1,0 +1,20 @@
+ 
+ .container{
+    display: inline-flex;
+    background-color: blanchedalmond;
+    justify-content: space-between;
+    padding: 5px;
+    div{
+        margin: 5px;
+    }
+    .price-active{
+        font-size: medium;
+        font-weight:lighter;
+        text-decoration:line-through;
+    
+    }
+    .price-descount{
+        font-size: medium;
+        font-weight: bolder;
+    }
+ }

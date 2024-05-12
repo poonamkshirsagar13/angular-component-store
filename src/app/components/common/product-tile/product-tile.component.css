@@ -1,0 +1,37 @@
+.container {
+    background-color: blue;
+    border: 1px solid firebrick;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+}
+.row {
+    width: 100%;
+}
+.main-img {
+    margin: 0 auto;
+    background-color:rebeccapurple;
+    border: 1px solid brown;
+    height: 40%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.des{
+    background-color:aquamarine;
+    border: 1px solid hotpink;
+    height: 20%;  
+}
+.price{
+    background-color:tan;
+    border: 1px solid teal;
+    height: 20%;  
+}
+.img-tile{
+    background-color:cornflowerblue;
+    border: 1px solid red;
+    height: 20%; 
+}

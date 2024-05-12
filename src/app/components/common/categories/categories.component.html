@@ -1,0 +1,10 @@
+<div>
+   <div>Categories</div>
+   <div class="layout">
+      <div *ngFor="let catx of cats">
+         <div class="cat-item">
+            <app-category-item [cat]="catx"></app-category-item>
+         </div>
+      </div>
+   </div>
+</div>

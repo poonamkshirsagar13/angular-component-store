@@ -1,10 +1,10 @@
-<!-- <p>img works!</p> -->
-<div [class]="imgClasses" [style]="imgCXStyle">
-    <div>
-        <img src={{img.src}} alt={{img.alt}}/>
+<div class="img-container" [class]="imgClasses">
+    <div class="centre-align" >
+        <div class="img">
+            <img src={{img.src}} alt={{img.alt}}/>
+        </div>
+        @if(label) {
+            <div class="label">{{label}}</div>
+        }
     </div>
-    @if(label) {
-        <div class="label">{{label}}</div>
-    }
 </div>
-

@@ -13,6 +13,8 @@ export class DiscriptionComponent {
    *
    * @required
    */
-  @Input () disStyle: string='';
+  @Input () desc1: string='';
+  @Input () desc2: string='';
+  @Input() disStyle:string='';
 
 }
