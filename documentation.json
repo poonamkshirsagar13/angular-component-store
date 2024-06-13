@@ -1783,7 +1783,7 @@
         },
         {
             "name": "ReleatedComponent",
-            "id": "component-ReleatedComponent-2f09e2b4ea485d45def370e83672b15bced8537cdad687f8f08c8561fd9228258a50b40182904ed01e12d2a1daeb265279b10ce680778570da6738da49b07562",
+            "id": "component-ReleatedComponent-779a658721f3e9206a47c40f892ce1db8a988a2664e7a3f0c503f8414d9e2af47264fb6865993bbbad39ba1cd452a27b1aabd410bcd47e743a9c0fa7ad6078bd",
             "file": "src/app/components/common/releated/releated.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1801,10 +1801,10 @@
             "inputsClass": [
                 {
                     "name": "products",
-                    "defaultValue": "[{\r\n  mainIcon: {\r\n    src: \"assets/imgs/bird.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  label: \"Laptop\",\r\n  desc_p: \"Product is new developed\",\r\n  desc_p2: \"Product Product Product\",\r\n  priceDiscounted: \"$300\",\r\n  priceOriginal: \"$400\",\r\n\r\n  productImgOne: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgTwo: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgThr: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }\r\n}]",
+                    "defaultValue": "[\r\n  {\r\n    src: \"assets/imgs/bird.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  {\r\n    src: \"assets/imgs/sun.svg.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  {\r\n   \r\n      src: \"assets/imgs/alien.png\",\r\n      alt: \"Laptop\"\r\n  \r\n  },\r\n]",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 19,
                     "type": "any",
                     "decorators": []
                 },
@@ -1813,7 +1813,7 @@
                     "defaultValue": "\"Your Releated Items....\"",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 16,
+                    "line": 17,
                     "type": "string",
                     "decorators": []
                 },
@@ -1822,7 +1822,7 @@
                     "defaultValue": "\"viewAll\"",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 17,
+                    "line": 18,
                     "type": "string",
                     "decorators": []
                 }
@@ -1855,18 +1855,22 @@
                 {
                     "name": "CommonModule",
                     "type": "module"
+                },
+                {
+                    "name": "DisplayImgComponent",
+                    "type": "component"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { ProductTileComponent } from '../product-tile/product-tile.component';\r\nimport { OfferImgComponent } from '../offer-img/offer-img.component';\r\n\r\n@Component({\r\n  selector: 'app-releated',\r\n  standalone: true,\r\n  imports: [NameTagComponent,ImgComponent,ProductTileComponent,OfferImgComponent,CommonModule],\r\n  templateUrl: './releated.component.html',\r\n  styleUrl: './releated.component.css'\r\n})\r\nexport class ReleatedComponent {\r\n @Input() releated:string=\"Your Releated Items....\";\r\n @Input() viewTo:string=\"viewAll\";\r\n @Input() products: any = [{\r\n  mainIcon: {\r\n    src: \"assets/imgs/bird.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  label: \"Laptop\",\r\n  desc_p: \"Product is new developed\",\r\n  desc_p2: \"Product Product Product\",\r\n  priceDiscounted: \"$300\",\r\n  priceOriginal: \"$400\",\r\n\r\n  productImgOne: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgTwo: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgThr: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }\r\n}]\r\n};\r\n",
+            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { ProductTileComponent } from '../product-tile/product-tile.component';\r\nimport { OfferImgComponent } from '../offer-img/offer-img.component';\r\nimport { DisplayImgComponent } from '../display-img/display-img.component';\r\n\r\n@Component({\r\n  selector: 'app-releated',\r\n  standalone: true,\r\n  imports: [NameTagComponent,ImgComponent,ProductTileComponent,OfferImgComponent,CommonModule,DisplayImgComponent],\r\n  templateUrl: './releated.component.html',\r\n  styleUrl: './releated.component.css'\r\n})\r\nexport class ReleatedComponent {\r\n @Input() releated:string=\"Your Releated Items....\";\r\n @Input() viewTo:string=\"viewAll\";\r\n @Input() products: any = [\r\n  {\r\n    src: \"assets/imgs/bird.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  {\r\n    src: \"assets/imgs/sun.svg.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  {\r\n   \r\n      src: \"assets/imgs/alien.png\",\r\n      alt: \"Laptop\"\r\n  \r\n  },\r\n]\r\n};\r\n",
             "styleUrl": "./releated.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div>\r\n    <div class=\"label-row d-flex justify-content-between \">\r\n        <div>\r\n          <app-name-tag [labelName]=\"releated\"></app-name-tag>\r\n        </div>\r\n        <div>\r\n          <app-name-tag [labelName]=\"viewTo\"></app-name-tag>\r\n        </div>\r\n    </div>\r\n    <div class=\"youth\">\r\n        <div *ngFor=\"let prod of products\" class=\"col-sm-4\">\r\n          <app-product-tile [product]=\"prod\"></app-product-tile>\r\n          <app-img [img]=\"prod\"></app-img>  \r\n\r\n        </div>\r\n        \r\n    </div>\r\n</div>\r\n"
+            "templateData": "<div>\r\n    <div class=\"label-row d-flex justify-content-between \">\r\n        <div>\r\n          <app-name-tag [labelName]=\"releated\"></app-name-tag>\r\n        </div>\r\n        <div>\r\n          <app-name-tag [labelName]=\"viewTo\"></app-name-tag>\r\n        </div>\r\n    </div>\r\n    <div class=\"label-row d-flex\">\r\n        <div>\r\n           <app-display-img></app-display-img>\r\n        </div>\r\n        <div class=\"label-row d-flex\">\r\n            <div *ngFor=\"let prod of products\" class=\"col-sm-4\">\r\n              <app-img [img]=\"prod.Icon\"></app-img>  \r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n    \r\n</div>\r\n"
         },
         {
             "name": "TaskComponent",
