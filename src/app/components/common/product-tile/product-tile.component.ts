@@ -13,27 +13,25 @@ import { PriceComponent } from '../price/price.component';
 })
 export class ProductTileComponent {
   @Input() product: any = {
-    src: 'assets/imgs/home.png',
-    alt: 'Logo Image'
-  };
-
-  @Input() productImgOne: any = {
-    src: 'assets/imgs/home.png',
-    alt: 'Logo Image'
-  };
-
-  @Input() productImgTwo: any = {
-    src: 'assets/imgs/home.png',
-    alt: 'Logo Image'
-  };
-
-  @Input() productImgThr: any = {
-    src: 'assets/imgs/home.png',
-    alt: 'Logo Image'
-  };
-  
-  @Input() desc_p: string = "Product is new developed";
-  @Input() desc_p2:string ="Product Product Product";
-  @Input() labelOne:string="300$";
-  @Input() labelTwo:string="400$";
+    mainIcon: {
+      src: 'assets/imgs/home.png',
+      alt: 'Logo Image'
+    },
+    productImgOne: {
+      src: 'assets/imgs/home.png',
+      alt: 'Logo Image'
+    },
+    productImgTwo: {
+      src: 'assets/imgs/home.png',
+      alt: 'Logo Image'
+    },
+    productImgThr: {
+      src: 'assets/imgs/home.png',
+      alt: 'Logo Image'
+    },
+    desc_p: "Product is new developed",
+    desc_p2: "Product Product Product",
+    priceDiscounted: "$300",
+    priceOriginal: "$400"
+  }
 }

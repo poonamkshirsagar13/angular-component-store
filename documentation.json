@@ -372,7 +372,7 @@
         },
         {
             "name": "CategoriesComponent",
-            "id": "component-CategoriesComponent-13a054bef342eee8696d4f3893b1b5492d074e2b7fa9532d2aaf1122c34bb90f294a2578f664787b3313d48baa6071c76deaae5e7f9dac915825394511a8796b",
+            "id": "component-CategoriesComponent-d227576ae41a96bade54b51f2ea54c8d7503dcdf0e6f24780af9f92f37ecc040ea49566ed8cfcbf311b72fb564c65ef6b7427c40a0945fb1683b8dd2543b850d",
             "file": "src/app/components/common/categories/categories.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -387,20 +387,19 @@
             ],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [
+            "inputsClass": [
                 {
                     "name": "cats",
-                    "defaultValue": "[{\r\n    label: \"Laptop\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Tabs\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  }]",
+                    "defaultValue": "[{\r\n    label: \"Laptop\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Tabs\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Tabs\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },]",
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "line": 19,
                     "type": "any",
-                    "optional": false,
-                    "description": "",
-                    "line": 19
+                    "decorators": []
                 }
             ],
+            "outputsClass": [],
+            "propertiesClass": [],
             "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
@@ -420,17 +419,17 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { CategoryItemComponent } from '../category-item/category-item.component';\r\nimport { CommonModule } from '@angular/common';\r\n\r\n@Component({\r\n  selector: 'app-categories',\r\n  standalone: true,\r\n  imports: [CategoryItemComponent, CommonModule],\r\n  templateUrl: './categories.component.html',\r\n  styleUrl: './categories.component.css'\r\n})\r\nexport class CategoriesComponent {\r\n  // @Input() label:string=\"Laptop\";\r\n  // @Input() logo: any = {\r\n  //   src: 'assets/imgs/bird.png',\r\n  //   alt: 'Logo Image'\r\n  // };\r\n\r\n  cats: any = [{\r\n    label: \"Laptop\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Tabs\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  }]\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { CategoryItemComponent } from '../category-item/category-item.component';\r\nimport { CommonModule } from '@angular/common';\r\n\r\n@Component({\r\n  selector: 'app-categories',\r\n  standalone: true,\r\n  imports: [CategoryItemComponent, CommonModule],\r\n  templateUrl: './categories.component.html',\r\n  styleUrl: './categories.component.css'\r\n})\r\nexport class CategoriesComponent {\r\n  // @Input() label:string=\"Laptop\";\r\n  // @Input() logo: any = {\r\n  //   src: 'assets/imgs/bird.png',\r\n  //   alt: 'Logo Image'\r\n  // };\r\n\r\n  @Input() cats: any = [{\r\n    label: \"Laptop\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Tabs\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Phones\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },\r\n  {\r\n    label: \"Tabs\",\r\n    icon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    }\r\n  },]\r\n\r\n}\r\n",
             "styleUrl": "./categories.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"container\">\r\n   <div class=\"row\">Categories </div>\r\n   <div *ngFor=\"let catx of cats\">\r\n      <div class=\"row\"><app-category-item [cat]=\"catx\"></app-category-item></div>\r\n   </div>\r\n</div>\r\n"
+            "templateData": "<div>\r\n   <div>Categories</div>\r\n   <div class=\"layout\">\r\n      <div *ngFor=\"let catx of cats\">\r\n         <div class=\"cat-item\">\r\n            <app-category-item [cat]=\"catx\"></app-category-item>\r\n         </div>\r\n      </div>\r\n   </div>\r\n</div>\r\n"
         },
         {
             "name": "CategoryItemComponent",
-            "id": "component-CategoryItemComponent-1bdcd90a5f29ae45ee798bd9ad9bcd7fa12c51ece9eedd65cf896e3e31779a8246bce4aaa549714b0c9fd087a2db6a8fadc581bb96aab1d287403979324c0ff3",
+            "id": "component-CategoryItemComponent-fd1738c6e3f9e20cc50f07166e3b930518fa66cefaa1b2eb09172c920da4a50f4c8267192fbbe4fa0be501036846a0f5191c5b59b1c2d6222ccd1003dd4047af",
             "file": "src/app/components/common/category-item/category-item.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -448,7 +447,7 @@
             "inputsClass": [
                 {
                     "name": "cat",
-                    "defaultValue": "undefined",
+                    "defaultValue": "{\r\n      label: \"HeadPhones\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    }",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 13,
@@ -477,13 +476,13 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\n\r\n@Component({\r\n  selector: 'app-category-item',\r\n  standalone: true,\r\n  imports: [ImgComponent,NameTagComponent],\r\n  templateUrl: './category-item.component.html',\r\n  styleUrl: './category-item.component.css'\r\n})\r\nexport class CategoryItemComponent {\r\n    @Input() cat: any = undefined;\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\n\r\n@Component({\r\n  selector: 'app-category-item',\r\n  standalone: true,\r\n  imports: [ImgComponent,NameTagComponent],\r\n  templateUrl: './category-item.component.html',\r\n  styleUrl: './category-item.component.css'\r\n})\r\nexport class CategoryItemComponent {\r\n    @Input() cat: any = {\r\n      label: \"HeadPhones\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    };\r\n\r\n}\r\n",
             "styleUrl": "./category-item.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"container col-4\">\r\n    <div class=\"row align-items-center sec-box\">\r\n        <div class=\"label\">\r\n            <app-name-tag [labelName]=\"cat.label\"></app-name-tag>\r\n        </div>\r\n        <div class=\"picture\">\r\n            <app-img  [img]=\"cat.icon\" [imgSize]=\"'small'\"></app-img>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"container\" >\r\n    <div class=\"row align-items-center sec-box\">\r\n        <div class=\"label col\">\r\n            <app-name-tag [labelName]=\"cat.label\"></app-name-tag>\r\n        </div>\r\n        <div class=\"picture col\">\r\n            <app-img  [img]=\"cat.icon\" [imgSize]=\"'small'\"></app-img>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
         },
         {
             "name": "DiscriptionComponent",
@@ -575,7 +574,7 @@
         },
         {
             "name": "DisplayImgComponent",
-            "id": "component-DisplayImgComponent-cd779dca451b17394c5803d38977cd51cdf4c6890bf5ae25cffbb16743babdc2ae9a718b6eb37fc5091fce65a06c371767a11e2a6f973722df5ae11146c817ab",
+            "id": "component-DisplayImgComponent-b0c1ea21ffcbc8fe5d54eaeb112237682c16890c92a7934e32eef511fc743b8c61ccefbcd2b8e55abadd08432a2c02dbb005c5466a2fab1184cad3ffff51a0f9",
             "file": "src/app/components/common/display-img/display-img.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -591,6 +590,24 @@
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "\"pirot\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "labelName",
+                    "defaultValue": "\"50%\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "any",
+                    "decorators": []
+                },
                 {
                     "name": "logo",
                     "defaultValue": "{\r\n    src: 'assets/imgs/bird.png',\r\n    alt: 'Logo Image'\r\n  }",
@@ -622,13 +639,13 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component ,Input} from '@angular/core';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\n\r\n\r\n@Component({\r\n  selector: 'app-display-img',\r\n  standalone: true,\r\n  imports: [ImgComponent,NameTagComponent],\r\n  templateUrl: './display-img.component.html',\r\n  styleUrl: './display-img.component.css'\r\n})\r\nexport class DisplayImgComponent {\r\n  @Input() logo: any = {\r\n    src: 'assets/imgs/bird.png',\r\n    alt: 'Logo Image'\r\n  };\r\n\r\n  \r\n\r\n}\r\n",
+            "sourceCode": "import { Component ,Input} from '@angular/core';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\n\r\n\r\n@Component({\r\n  selector: 'app-display-img',\r\n  standalone: true,\r\n  imports: [ImgComponent,NameTagComponent],\r\n  templateUrl: './display-img.component.html',\r\n  styleUrl: './display-img.component.css'\r\n})\r\nexport class DisplayImgComponent {\r\n  @Input() logo: any = {\r\n    src: 'assets/imgs/bird.png',\r\n    alt: 'Logo Image'\r\n  };\r\n  @Input() label:any=\"pirot\";\r\n  @Input() labelName:any=\"50%\"\r\n\r\n}\r\n",
             "styleUrl": "./display-img.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"main-div\">\r\n    <div class=\"container\">\r\n        <div class=\"navi\"><app-name-tag label=\"50%\" ></app-name-tag></div>\r\n        <div class=\"infoi\" ><app-img [img]=\"logo\"></app-img></div>\r\n    </div>\r\n    <div class=\"navi-1\" ><app-name-tag label=\"Head\" [nameStyle]=\"'text-align: center;'\"></app-name-tag></div>\r\n</div>\r\n\r\n\r\n  \r\n"
+            "templateData": "<div class=\"main-div\">\r\n    <div class=\"container\">\r\n        <div class=\"navi\"><app-name-tag [labelName]=\"labelName\" ></app-name-tag></div>\r\n        <div class=\"infoi\" ><app-img [img]=\"logo\" [label]=\"label\"></app-img></div>\r\n    </div>\r\n</div>\r\n\r\n\r\n  \r\n"
         },
         {
             "name": "FooterComponent",
@@ -843,11 +860,11 @@
             "isDuplicate": true,
             "duplicateId": 1,
             "duplicateName": "HeaderComponent-1",
-            "templateData": "<div class=\"header\">\r\n    <div class=\"left-header\">\r\n        <div class=\"name-tag\"><app-name-tag [labelName]=\"label\"></app-name-tag></div>\r\n        <div class=\"image-tag\"><app-img [img]=\"nameLogo\" imgSize=\"small\"></app-img></div>\r\n    </div>\r\n    <div class=\"middle-header\">\r\n      <div class=\"search\"><app-input></app-input></div> \r\n    </div>\r\n    <div class=\"right-header\">\r\n        <div><app-img [img]=\"profileLogo\" imgSize=\"small\"></app-img></div>\r\n        <div><app-img [img]=\"cartLogo\" imgSize=\"small\"></app-img></div>\r\n    </div>\r\n</div>"
+            "templateData": "<div class=\"header\">\r\n    <div class=\"left-header\">\r\n        <div class=\"name-tag\"><app-name-tag [labelName]=\"label\"></app-name-tag></div>\r\n        <div class=\"image-tag\"><app-img [img]=\"nameLogo\" imgSize=\"small\"></app-img></div>\r\n    </div>\r\n    <div class=\"middle-header\">\r\n      <div class=\"search\"><app-input></app-input></div> \r\n    </div>\r\n    <div class=\"right-header\">\r\n        <div><app-img [img]=\"profileLogo\" imgSize=\"small\"></app-img></div>\r\n        <div><app-img [img]=\"cartLogo\" imgSize=\"small\"></app-img></div>\r\n    </div>\r\n    \r\n</div>"
         },
         {
             "name": "HomeComponent",
-            "id": "component-HomeComponent-c76c780934cece0a3d64192cbf9dc09e8ee047aa9ea7824fa3d7c3faec7f88656f2f3ccf6f5c343d3f481729eb4e9e79a2f2e2169ba5abc5e3069c752b921501",
+            "id": "component-HomeComponent-54e2e023d7ca154ec939b789ed30257c66e179040cd9dd6769d1ce5e7c06c4e168340cefe2cf883732a121bca443808609614f8d4b8cc76500e707cefb6220bc",
             "file": "src/app/components/home/home.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -864,65 +881,79 @@
             "hostDirectives": [],
             "inputsClass": [],
             "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": true,
-            "imports": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './home.component.html',\r\n  styleUrl: './home.component.css'\r\n})\r\nexport class HomeComponent {\r\n\r\n}\r\n",
-            "styleUrl": "./home.component.css",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": "",
-            "extends": [],
-            "templateData": "<div class=\"home\">\r\n    <p>home works!</p>\r\n</div>\r\n\r\n"
-        },
-        {
-            "name": "HomeComponent",
-            "id": "component-HomeComponent-c76c780934cece0a3d64192cbf9dc09e8ee047aa9ea7824fa3d7c3faec7f88656f2f3ccf6f5c343d3f481729eb4e9e79a2f2e2169ba5abc5e3069c752b921501-1",
-            "file": "src/app/components/header/home/home.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-home",
-            "styleUrls": [],
-            "styles": [],
-            "templateUrl": [
-                "./home.component.html"
+            "propertiesClass": [
+                {
+                    "name": "homePageData",
+                    "defaultValue": "{\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n        label: \"Laptop\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Tabs\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Phones\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n    }],\r\n    products: [{\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    {\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    {\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    }],\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 24,
+                    "modifierKind": [
+                        125
+                    ]
+                }
             ],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
             "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "standalone": true,
-            "imports": [],
+            "imports": [
+                {
+                    "name": "HeaderComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "DisplayImgComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CategoriesComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CategoryItemComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "NameTagComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ImgComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ProductTileComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ProductsComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "OfferComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ReleatedComponent",
+                    "type": "component"
+                }
+            ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './home.component.html',\r\n  styleUrl: './home.component.css'\r\n})\r\nexport class HomeComponent {\r\n\r\n}\r\n",
+            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { HeaderComponent } from '../header/header.component';\r\nimport { DisplayImgComponent } from '../common/display-img/display-img.component';\r\nimport { CategoriesComponent } from '../common/categories/categories.component';\r\nimport { CategoryItemComponent } from '../common/category-item/category-item.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { ProductTileComponent } from '../common/product-tile/product-tile.component';\r\nimport { ProductsComponent } from '../common/products/products.component';\r\nimport { OfferComponent } from '../common/offer/offer.component';\r\nimport { ReleatedComponent } from '../common/releated/releated.component';\r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  standalone: true,\r\n  imports: [HeaderComponent,DisplayImgComponent,CategoriesComponent,\r\n    CategoryItemComponent,NameTagComponent,ImgComponent,ProductTileComponent,ProductsComponent,\r\n    OfferComponent,ReleatedComponent],\r\n  templateUrl: './home.component.html',\r\n  styleUrl: './home.component.css'\r\n})\r\nexport class HomeComponent {\r\n\r\n  public homePageData: any = {\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n        label: \"Laptop\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Tabs\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Phones\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n    }],\r\n    products: [{\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    {\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    {\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    }],\r\n  }\r\n}\r\n",
             "styleUrl": "./home.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "isDuplicate": true,
-            "duplicateId": 1,
-            "duplicateName": "HomeComponent-1",
-            "templateData": "<div class=\"home\">\r\n    <p>home works!</p>\r\n</div>\r\n\r\n"
+            "templateData": "<div class=\"home\">\r\n    <app-header \r\n        [label]=\"homePageData.header.label\"\r\n        [nameLogo]=\"homePageData.header.name\"\r\n        [profileLogo]=\"homePageData.header.profile\"\r\n        [cartLogo]=\"homePageData.header.cart\"\r\n    ></app-header>\r\n    <app-categories [cats]=\"homePageData.catagories\"></app-categories>\r\n    <app-offer></app-offer>\r\n    <app-products [products]=\"homePageData.products\"></app-products>\r\n    <app-releated></app-releated>\r\n    \r\n</div>\r\n\r\n"
         },
         {
             "name": "ImgComponent",
@@ -1251,6 +1282,190 @@
             "templateData": "<div (click)=\"onClick.emit($event)\" [class]=\"Classes\" [style]=\"nameStyle\">{{labelName}}</div>"
         },
         {
+            "name": "OfferComponent",
+            "id": "component-OfferComponent-bcc03d1d57afab7b7ba46af7f6618a5099586ef989a5bca91ee6f3be1e81342ab27f3f6e492e989609a6823e87286c2d6fb4214134c89ed07f64a9ca3311649e",
+            "file": "src/app/components/common/offer/offer.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-offer",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./offer.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "OfferImgComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "OfferDisplayComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { OfferImgComponent } from '../offer-img/offer-img.component';\r\nimport { OfferDisplayComponent } from '../offer-display/offer-display.component';\r\n\r\n@Component({\r\n  selector: 'app-offer',\r\n  standalone: true,\r\n  imports: [OfferImgComponent,OfferDisplayComponent],\r\n  templateUrl: './offer.component.html',\r\n  styleUrl: './offer.component.css'\r\n})\r\nexport class OfferComponent {\r\n\r\n}\r\n",
+            "styleUrl": "./offer.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"row\">\r\n <div class=\"col-3 height\">\r\n    <app-offer-img></app-offer-img>\r\n </div>\r\n <div class=\"col-9 height\">\r\n    <app-offer-display></app-offer-display>\r\n </div>\r\n</div>\r\n\r\n"
+        },
+        {
+            "name": "OfferDisplayComponent",
+            "id": "component-OfferDisplayComponent-60d912d6564e82c6eb26c0d916a90674381448a5484593c7e909b381a173a96a83f20d4a4944bd2d633132bb4ffdc1e9d230f2f425b04942e1ffe9360d344250",
+            "file": "src/app/components/common/offer-display/offer-display.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-offer-display",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./offer-display.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "cat",
+                    "defaultValue": "{\r\n    labelName1:\"fun\",\r\n    highlight1:\"FunPrice\",\r\n    desc1: 'Price Today',\r\n    desc2: 'Discounte start',\r\n    icon1: {\r\n      src: \"assets/imgs/profile.png\",\r\n      alt: \"Laptop 1\"\r\n    },\r\n    labelName2:\"Alien\",\r\n    highlight2:\"Alien Price\",\r\n    desc3: 'Another planet ',\r\n    desc4: 'Alience ',\r\n    icon2: {\r\n      src: \"assets/imgs/alien.png\",\r\n      alt: \"Laptop 2\"\r\n    },\r\n    labelName3:\"HeadPhone\",\r\n    highlight3:\"With noise canesel  \",\r\n    desc5: 'with same price  ',\r\n    desc6: 'earphone ',\r\n    icon3: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop 3\"\r\n    }\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 573,
+                            "end": 587,
+                            "flags": 16842752,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 334,
+                            "tagName": {
+                                "pos": 574,
+                                "end": 582,
+                                "flags": 16842752,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 80,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nImage Src and Alt Text\n\n",
+                    "description": "<p>Image Src and Alt Text</p>\n",
+                    "line": 24,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "changeImage",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 51
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "NameTagComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "DiscriptionComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ImgComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\nimport { DiscriptionComponent } from '../discription/discription.component';\r\nimport { ImgComponent } from '../img/img.component';\r\n\r\n\r\n@Component({\r\n  selector: 'app-offer-display',\r\n  standalone: true,\r\n  imports: [NameTagComponent,DiscriptionComponent,ImgComponent],\r\n  templateUrl: './offer-display.component.html',\r\n  styleUrl: './offer-display.component.css'\r\n})\r\nexport class OfferDisplayComponent {\r\n  /**\r\n   * Image Src and Alt Text\r\n   *\r\n   * @required\r\n   */\r\n  // @Input() labelName:string=\"fun\";\r\n  // @Input() highlight:string=\"FunPrice\";\r\n  // @Input () desc1: string='Price Today';\r\n  // @Input () desc2: string='Discounte start';\r\n  @Input() cat: any = {\r\n    labelName1:\"fun\",\r\n    highlight1:\"FunPrice\",\r\n    desc1: 'Price Today',\r\n    desc2: 'Discounte start',\r\n    icon1: {\r\n      src: \"assets/imgs/profile.png\",\r\n      alt: \"Laptop 1\"\r\n    },\r\n    labelName2:\"Alien\",\r\n    highlight2:\"Alien Price\",\r\n    desc3: 'Another planet ',\r\n    desc4: 'Alience ',\r\n    icon2: {\r\n      src: \"assets/imgs/alien.png\",\r\n      alt: \"Laptop 2\"\r\n    },\r\n    labelName3:\"HeadPhone\",\r\n    highlight3:\"With noise canesel  \",\r\n    desc5: 'with same price  ',\r\n    desc6: 'earphone ',\r\n    icon3: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop 3\"\r\n    }\r\n  };\r\n\r\n  changeImage = (count: number)=> {\r\n\r\n  }\r\n}\r\n",
+            "styleUrl": "./offer-display.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div style=\"background-color: aqua;\">\r\n  <div id=\"carouselExampleCaptions\" class=\"carousel slide\" data-bs-ride=\"carousel\">\r\n    <div class=\"carousel-indicators\">\r\n          <button type=\"button\" data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>\r\n          <button type=\"button\" data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>\r\n          <button type=\"button\" data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>\r\n    </div>\r\n    <div class=\"carousel-inner\">\r\n          <div class=\"carousel-item active\">\r\n            <div class=\"row\">\r\n              <div class=\"col\">\r\n                <app-name-tag [labelName]=\"cat.labelName1\"></app-name-tag>\r\n                <app-discription [desc1]=\"cat.desc1\" [desc2]=\"cat.desc2\"></app-discription>\r\n                <app-name-tag [labelName]=\"cat.highlight1\"></app-name-tag>\r\n              </div>\r\n              <div class=\"col\">\r\n                <app-img [img]=\"cat.icon1\"></app-img>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <div class=\"row\">\r\n              <div class=\"col\">\r\n                <app-name-tag [labelName]=\"cat.labelName2\"></app-name-tag>\r\n                <app-discription [desc1]=\"cat.desc3\" [desc2]=\"cat.desc4\"></app-discription>\r\n                <app-name-tag [labelName]=\"cat.highlight2\"></app-name-tag>\r\n              </div>\r\n              <div class=\"col\">\r\n               <app-img [img]=\"cat.icon2\"></app-img>\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <div class=\"row\">\r\n              <div class=\"col\">\r\n                <app-name-tag [labelName]=\"cat.labelName3\"></app-name-tag>\r\n                <app-discription [desc1]=\"cat.desc5\" [desc2]=\"cat.desc6\"></app-discription>\r\n                <app-name-tag [labelName]=\"cat.highlight3\"></app-name-tag>\r\n              </div>\r\n              <div class=\"col\">\r\n               <app-img class=\"d-block w-100\" [img]=\"cat.icon3\"></app-img>\r\n              </div>\r\n            </div>\r\n          </div>\r\n    </div>\r\n    <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExampleCaptions\" data-bs-slide=\"prev\">\r\n          <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"visually-hidden\">Previous</span>\r\n    </button>\r\n    <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExampleCaptions\" data-bs-slide=\"next\">\r\n          <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"visually-hidden\">Next</span>\r\n    </button>\r\n  </div>\r\n</div>"
+        },
+        {
+            "name": "OfferImgComponent",
+            "id": "component-OfferImgComponent-e4e334ddddb1f983129fba39ffecbec8dfb2f5a7f226b54ec39aa344659cfb9e57f9b4f8066ce15bc285774476932d695e12beecee9a8233f3119e8530549238",
+            "file": "src/app/components/common/offer-img/offer-img.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-offer-img",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./offer-img.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "DisplayImgComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { DisplayImgComponent } from '../display-img/display-img.component';\r\n\r\n@Component({\r\n  selector: 'app-offer-img',\r\n  standalone: true,\r\n  imports: [DisplayImgComponent],\r\n  templateUrl: './offer-img.component.html',\r\n  styleUrl: './offer-img.component.css'\r\n})\r\nexport class OfferImgComponent {\r\n\r\n}\r\n",
+            "styleUrl": "./offer-img.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"offer\">\r\n <app-display-img></app-display-img>\r\n <app-display-img></app-display-img>\r\n</div>\r\n\r\n"
+        },
+        {
             "name": "PageComponent",
             "id": "component-PageComponent-d32b0f19628254ea3fc5526c4d4564ada1cc83cf936759006d90a46f5874b02a3359e331bddda20b22e74a616a6443c660602ba74dd38ebe1160759e0de6f7ba",
             "file": "src/stories/page.component.ts",
@@ -1345,7 +1560,7 @@
         },
         {
             "name": "PriceComponent",
-            "id": "component-PriceComponent-c7c6e134888ab11a197b8c5a1f2293dbb81096e5ef49202034c739789936cdb1688864a290143cb772dfa1c44ddddd91a75c2cb4e5b1ad03ea86a1f4d74f2061",
+            "id": "component-PriceComponent-861bdb2dfd92546dca02a4f90719c852fd583424a9fafe9ea080c77899672082ad8ac6cfa212348e0d2ea06a4f345d61b48a51fa7840c87e339a4c476dccdb49",
             "file": "src/app/components/common/price/price.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1362,8 +1577,8 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
-                    "name": "label1",
-                    "defaultValue": "'555$'",
+                    "name": "priceDiscounted",
+                    "defaultValue": "'$555'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1393,8 +1608,8 @@
                     "decorators": []
                 },
                 {
-                    "name": "label2",
-                    "defaultValue": "'676$'",
+                    "name": "priceOriginal",
+                    "defaultValue": "'$676'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 17,
@@ -1414,17 +1629,96 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component,Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-price',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './price.component.html',\r\n  styleUrl: './price.component.css'\r\n})\r\nexport class PriceComponent {\r\n    /**\r\n   * Image Src and Alt Text\r\n   *\r\n   * @required\r\n   */\r\n  @Input() label1:string='555$';\r\n  @Input() label2:string='676$';\r\n\r\n}\r\n",
+            "sourceCode": "import { Component,Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-price',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './price.component.html',\r\n  styleUrl: './price.component.css'\r\n})\r\nexport class PriceComponent {\r\n    /**\r\n   * Image Src and Alt Text\r\n   *\r\n   * @required\r\n   */\r\n  @Input() priceDiscounted:string='$555';\r\n  @Input() priceOriginal:string='$676';\r\n\r\n}\r\n",
             "styleUrl": "./price.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"container\">\r\n    <div class=\"price-descount\">{{label1}}</div>\r\n    <div class=\"price-active\">{{label2}}</div>\r\n</div>\r\n\r\n"
+            "templateData": "<div class=\"container\">\r\n    <div class=\"price-discount\">{{priceDiscounted}}</div>\r\n    <div class=\"price-striked\">{{priceOriginal}}</div>\r\n</div>\r\n\r\n"
+        },
+        {
+            "name": "ProductsComponent",
+            "id": "component-ProductsComponent-da9fd07bfc17ea5c54d85aa25c7af5db932ef4932f47c8d20b3206cc7cf1019622acc4ba74ee782e1a329d3a55010cd5f759fb64addb5720e23bcb7a672e9a92",
+            "file": "src/app/components/common/products/products.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-products",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./products.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "products",
+                    "defaultValue": "[{\r\n    mainIcon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    },\r\n    label: \"Laptop\",\r\n    desc_p: \"Product is new developed\",\r\n    desc_p2: \"Product Product Product\",\r\n    priceDiscounted: \"$300\",\r\n    priceOriginal: \"$400\",\r\n\r\n    productImgOne: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgTwo: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgThr: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    }\r\n  },\r\n  {\r\n    mainIcon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    },\r\n    label: \"Laptop\",\r\n    desc_p: \"Product is new developed\",\r\n    desc_p2: \"Product Product Product\",\r\n    priceDiscounted: \"$300\",\r\n    priceOriginal: \"$400\",\r\n    productImgOne: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgTwo: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgThr: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    }\r\n  }\r\n]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "Today",
+                    "defaultValue": "\"Today's Deals\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "viewTo",
+                    "defaultValue": "\"View All\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "ProductTileComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "NameTagComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { ProductTileComponent } from '../product-tile/product-tile.component';\r\nimport { CommonModule } from '@angular/common';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\n\r\n\r\n@Component({\r\n  selector: 'app-products',\r\n  standalone: true,\r\n  imports: [ProductTileComponent,CommonModule,NameTagComponent],\r\n  templateUrl: './products.component.html',\r\n  styleUrl: './products.component.css'\r\n})\r\nexport class ProductsComponent {\r\n  @Input() Today:string=\"Today's Deals\";\r\n  @Input() viewTo:string=\"View All\"\r\n  @Input() products: any = [{\r\n    mainIcon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    },\r\n    label: \"Laptop\",\r\n    desc_p: \"Product is new developed\",\r\n    desc_p2: \"Product Product Product\",\r\n    priceDiscounted: \"$300\",\r\n    priceOriginal: \"$400\",\r\n\r\n    productImgOne: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgTwo: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgThr: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    }\r\n  },\r\n  {\r\n    mainIcon: {\r\n      src: \"assets/imgs/bird.png\",\r\n      alt: \"Laptop\"\r\n    },\r\n    label: \"Laptop\",\r\n    desc_p: \"Product is new developed\",\r\n    desc_p2: \"Product Product Product\",\r\n    priceDiscounted: \"$300\",\r\n    priceOriginal: \"$400\",\r\n    productImgOne: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgTwo: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgThr: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    }\r\n  }\r\n]\r\n}\r\n",
+            "styleUrl": "./products.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div>\r\n  <div class=\"label-row d-flex justify-content-between \">\r\n    <div>\r\n      <app-name-tag [labelName]=\"Today\"></app-name-tag>\r\n    </div>\r\n    <div>\r\n      <app-name-tag [labelName]=\"viewTo\"></app-name-tag>\r\n    </div>\r\n  </div>\r\n  <div class=\"youth\">\r\n    <div *ngFor=\"let prod of products\" class=\"col-sm-4\">\r\n      <app-product-tile [product]=\"prod\"></app-product-tile>\r\n    </div>\r\n  </div>\r\n</div>"
         },
         {
             "name": "ProductTileComponent",
-            "id": "component-ProductTileComponent-714b4c61bb9212e4ad61c534b70714e80b2792e4b4fdd8fa71c1b9ee59c0bac945dcad8d4b2cf997b221215a2cccd64f270a965a731b21eac38c05ab817e2a5b",
+            "id": "component-ProductTileComponent-a171d2f119c804a955841a38934a1fcf724822f0455149f3722ae721741368c1d194051138e82b51559adb1fb326a913ae95cb23954e338c2bef0047bf360231",
             "file": "src/app/components/common/product-tile/product-tile.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1441,74 +1735,11 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
-                    "name": "desc_p",
-                    "defaultValue": "\"Product is new developed\"",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 35,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "desc_p2",
-                    "defaultValue": "\"Product Product Product\"",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 36,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "labelOne",
-                    "defaultValue": "\"300$\"",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 37,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "labelTwo",
-                    "defaultValue": "\"400$\"",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 38,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
                     "name": "product",
-                    "defaultValue": "{\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }",
+                    "defaultValue": "{\r\n    mainIcon: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgOne: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgTwo: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgThr: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    desc_p: \"Product is new developed\",\r\n    desc_p2: \"Product Product Product\",\r\n    priceDiscounted: \"$300\",\r\n    priceOriginal: \"$400\"\r\n  }",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 15,
-                    "type": "any",
-                    "decorators": []
-                },
-                {
-                    "name": "productImgOne",
-                    "defaultValue": "{\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 20,
-                    "type": "any",
-                    "decorators": []
-                },
-                {
-                    "name": "productImgThr",
-                    "defaultValue": "{\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 30,
-                    "type": "any",
-                    "decorators": []
-                },
-                {
-                    "name": "productImgTwo",
-                    "defaultValue": "{\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 25,
                     "type": "any",
                     "decorators": []
                 }
@@ -1542,13 +1773,100 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { DiscriptionComponent } from '../discription/discription.component';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\nimport { PriceComponent } from '../price/price.component';\r\n\r\n@Component({\r\n  selector: 'app-product-tile',\r\n  standalone: true,\r\n  imports: [ImgComponent,DiscriptionComponent,NameTagComponent,PriceComponent],\r\n  templateUrl: './product-tile.component.html',\r\n  styleUrl: './product-tile.component.css'\r\n})\r\nexport class ProductTileComponent {\r\n  @Input() product: any = {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  };\r\n\r\n  @Input() productImgOne: any = {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  };\r\n\r\n  @Input() productImgTwo: any = {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  };\r\n\r\n  @Input() productImgThr: any = {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  };\r\n  \r\n  @Input() desc_p: string = \"Product is new developed\";\r\n  @Input() desc_p2:string =\"Product Product Product\";\r\n  @Input() labelOne:string=\"300$\";\r\n  @Input() labelTwo:string=\"400$\";\r\n}\r\n",
+            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { DiscriptionComponent } from '../discription/discription.component';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\nimport { PriceComponent } from '../price/price.component';\r\n\r\n@Component({\r\n  selector: 'app-product-tile',\r\n  standalone: true,\r\n  imports: [ImgComponent,DiscriptionComponent,NameTagComponent,PriceComponent],\r\n  templateUrl: './product-tile.component.html',\r\n  styleUrl: './product-tile.component.css'\r\n})\r\nexport class ProductTileComponent {\r\n  @Input() product: any = {\r\n    mainIcon: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgOne: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgTwo: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    productImgThr: {\r\n      src: 'assets/imgs/home.png',\r\n      alt: 'Logo Image'\r\n    },\r\n    desc_p: \"Product is new developed\",\r\n    desc_p2: \"Product Product Product\",\r\n    priceDiscounted: \"$300\",\r\n    priceOriginal: \"$400\"\r\n  }\r\n}\r\n",
             "styleUrl": "./product-tile.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"container\">\r\n    <div  class=\"row align-items-center\">\r\n        <div class=\"main-img\" class=\"col-sm-4\" align=\"center\">\r\n            <app-img [img]=\"product\" [imgSize]=\"'small'\"></app-img>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row align-items-center\">    \r\n        <div class=\"des\"  class=\"col-sm-4\" align=\"center\">\r\n            <app-discription [desc1]=\"desc_p\" [desc2]=\"desc_p2\"></app-discription>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row align-items-center\">    \r\n        <div class=\"des\"  class=\"col-sm-4\" align=\"center\">\r\n         <div class=\"price\"><app-price [label1]=\"labelOne\" [label2]=\"labelTwo\"></app-price></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row align-items-center\">   \r\n        <div class=\"img-tile\" class=\"col-sm-4\" align=\"center\">\r\n            <div style=\"display: inline-flex;\">\r\n                <app-img  [img]=\"productImgOne\"></app-img>\r\n                <app-img  [img]=\"productImgTwo\"></app-img>\r\n                <app-img  [img]=\"productImgThr\"></app-img>\r\n            </div>\r\n            \r\n        </div>\r\n    </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"container\">\r\n    <div  class=\"row align-items-center\">\r\n        <div class=\"main-img\" class=\"col-sm-4\" align=\"center\">\r\n            <app-img [img]=\"product.mainIcon\" [imgSize]=\"'small'\"></app-img>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row align-items-center\">    \r\n        <div class=\"des\"  class=\"col-sm-4\" align=\"center\">\r\n            <app-discription [desc1]=\"product.desc_p\" [desc2]=\"product.desc_p2\"></app-discription>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row align-items-center\">    \r\n        <div class=\"des\"  class=\"col-sm-4\" align=\"center\">\r\n         <div class=\"price\"><app-price [priceDiscounted]=\"product.priceDiscounted\" [priceOriginal]=\"product.priceOriginal\"></app-price></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row align-items-center\">   \r\n        <div class=\"img-tile\" class=\"col-sm-4\" align=\"center\">\r\n            <div style=\"display: inline-flex;\">\r\n                <app-img  [img]=\"product.productImgOne\"></app-img>\r\n                <app-img  [img]=\"product.productImgTwo\"></app-img>\r\n                <app-img  [img]=\"product.productImgThr\"></app-img>\r\n            </div>\r\n            \r\n        </div>\r\n    </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "ReleatedComponent",
+            "id": "component-ReleatedComponent-2f09e2b4ea485d45def370e83672b15bced8537cdad687f8f08c8561fd9228258a50b40182904ed01e12d2a1daeb265279b10ce680778570da6738da49b07562",
+            "file": "src/app/components/common/releated/releated.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-releated",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./releated.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "products",
+                    "defaultValue": "[{\r\n  mainIcon: {\r\n    src: \"assets/imgs/bird.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  label: \"Laptop\",\r\n  desc_p: \"Product is new developed\",\r\n  desc_p2: \"Product Product Product\",\r\n  priceDiscounted: \"$300\",\r\n  priceOriginal: \"$400\",\r\n\r\n  productImgOne: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgTwo: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgThr: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }\r\n}]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "releated",
+                    "defaultValue": "\"Your Releated Items....\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "viewTo",
+                    "defaultValue": "\"viewAll\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "NameTagComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ImgComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ProductTileComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "OfferImgComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { NameTagComponent } from '../name-tag/name-tag.component';\r\nimport { ImgComponent } from '../img/img.component';\r\nimport { ProductTileComponent } from '../product-tile/product-tile.component';\r\nimport { OfferImgComponent } from '../offer-img/offer-img.component';\r\n\r\n@Component({\r\n  selector: 'app-releated',\r\n  standalone: true,\r\n  imports: [NameTagComponent,ImgComponent,ProductTileComponent,OfferImgComponent,CommonModule],\r\n  templateUrl: './releated.component.html',\r\n  styleUrl: './releated.component.css'\r\n})\r\nexport class ReleatedComponent {\r\n @Input() releated:string=\"Your Releated Items....\";\r\n @Input() viewTo:string=\"viewAll\";\r\n @Input() products: any = [{\r\n  mainIcon: {\r\n    src: \"assets/imgs/bird.png\",\r\n    alt: \"Laptop\"\r\n  },\r\n  label: \"Laptop\",\r\n  desc_p: \"Product is new developed\",\r\n  desc_p2: \"Product Product Product\",\r\n  priceDiscounted: \"$300\",\r\n  priceOriginal: \"$400\",\r\n\r\n  productImgOne: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgTwo: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  },\r\n  productImgThr: {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Image'\r\n  }\r\n}]\r\n};\r\n",
+            "styleUrl": "./releated.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div>\r\n    <div class=\"label-row d-flex justify-content-between \">\r\n        <div>\r\n          <app-name-tag [labelName]=\"releated\"></app-name-tag>\r\n        </div>\r\n        <div>\r\n          <app-name-tag [labelName]=\"viewTo\"></app-name-tag>\r\n        </div>\r\n    </div>\r\n    <div class=\"youth\">\r\n        <div *ngFor=\"let prod of products\" class=\"col-sm-4\">\r\n          <app-product-tile [product]=\"prod\"></app-product-tile>\r\n          <app-img [img]=\"prod\"></app-img>  \r\n\r\n        </div>\r\n        \r\n    </div>\r\n</div>\r\n"
         },
         {
             "name": "TaskComponent",
@@ -1773,7 +2091,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 10,
+        "count": 9,
         "status": "low",
         "files": [
             {
@@ -1848,7 +2166,7 @@
                 "linktype": "component",
                 "name": "DisplayImgComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -1879,6 +2197,33 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/common/offer-display/offer-display.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "OfferDisplayComponent",
+                "coveragePercent": 33,
+                "coverageCount": "1/3",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/components/common/offer-img/offer-img.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "OfferImgComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/common/offer/offer.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "OfferComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/common/price/price.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1893,7 +2238,25 @@
                 "linktype": "component",
                 "name": "ProductTileComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/9",
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/common/products/products.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ProductsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/common/releated/releated.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ReleatedComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -1933,21 +2296,12 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/header/home/home.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "HomeComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/app/components/home/home.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "HomeComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {

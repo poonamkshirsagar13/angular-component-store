@@ -10,6 +10,12 @@ import { NameTagComponent } from '../name-tag/name-tag.component';
   styleUrl: './category-item.component.css'
 })
 export class CategoryItemComponent {
-    @Input() cat: any = undefined;
+    @Input() cat: any = {
+      label: "HeadPhones",
+      icon: {
+        src: "assets/imgs/bird.png",
+        alt: "Laptop"
+      }
+    };
 
 }

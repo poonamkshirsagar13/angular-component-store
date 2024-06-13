@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CategoryItemComponent } from '../category-item/category-item.component';
 import { CommonModule } from '@angular/common';
 
@@ -16,7 +16,7 @@ export class CategoriesComponent {
   //   alt: 'Logo Image'
   // };
 
-  cats: any = [{
+  @Input() cats: any = [{
     label: "Laptop",
     icon: {
       src: "assets/imgs/bird.png",

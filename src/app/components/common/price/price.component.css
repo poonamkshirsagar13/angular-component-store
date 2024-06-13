@@ -7,13 +7,13 @@
     div{
         margin: 5px;
     }
-    .price-active{
+    .price-striked{
         font-size: medium;
         font-weight:lighter;
         text-decoration:line-through;
     
     }
-    .price-descount{
+    .price-discount{
         font-size: medium;
         font-weight: bolder;
     }

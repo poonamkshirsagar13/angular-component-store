@@ -13,7 +13,7 @@ export class PriceComponent {
    *
    * @required
    */
-  @Input() label1:string='555$';
-  @Input() label2:string='676$';
+  @Input() priceDiscounted:string='$555';
+  @Input() priceOriginal:string='$676';
 
 }

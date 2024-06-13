@@ -1,4 +1,14 @@
 <div class="home">
-    <p>home works!</p>
+    <app-header 
+        [label]="homePageData.header.label"
+        [nameLogo]="homePageData.header.name"
+        [profileLogo]="homePageData.header.profile"
+        [cartLogo]="homePageData.header.cart"
+    ></app-header>
+    <app-categories [cats]="homePageData.catagories"></app-categories>
+    <app-offer></app-offer>
+    <app-products [products]="homePageData.products"></app-products>
+    <app-releated></app-releated>
+    
 </div>
 

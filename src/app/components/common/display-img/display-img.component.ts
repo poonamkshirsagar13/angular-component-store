@@ -15,7 +15,7 @@ export class DisplayImgComponent {
     src: 'assets/imgs/bird.png',
     alt: 'Logo Image'
   };
-
-  
+  @Input() label:any="pirot";
+  @Input() labelName:any="50%"
 
 }
