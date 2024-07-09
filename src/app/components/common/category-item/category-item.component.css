@@ -1,18 +1,19 @@
-.sec-box {
-    display: inline-flex;
-    background-color: blue;
+.catagoryLabel{
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #cbcaca;
+    text-align: center;
+    justify-content: center;
 }
 
-.label {
-    /* width: 65%; */
-    border: 1px solid black;
-    /* justify-content: center; */
-    /* text-align: center; */
+.catagoryImg{
+    /* border: 1px black solid; */
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.picture {
-    /* width: 35%; */
-    /* justify-content: center; */
-    /* text-align: center; */
-    background-color: brown;
+.catagoryRow {
+    display: flex;
+    align-items: stretch;
 }

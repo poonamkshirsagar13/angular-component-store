@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 
 
 export class DataServiceService {
+  // constructor() { }
 
   constructor(private httpClient: HttpClient) { }
   tableData(sortBy:string, orderBy:string, pageNumber: number =1):Observable<any> {
@@ -18,5 +19,8 @@ export class DataServiceService {
   }
   loadData():Observable<any>{
     return this.httpClient.get(`http://localhost:5000/products`);
+  }
+  categoriesData():Observable<any>{
+    return this.httpClient.get('http://localhost:5000/brands');
   }
 }

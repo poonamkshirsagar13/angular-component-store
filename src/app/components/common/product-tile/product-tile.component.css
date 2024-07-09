@@ -1,21 +1,30 @@
 .container {
     background-color: blue;
     border: 1px solid firebrick;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: fit-content;
     align-content: center;
     justify-content: center;
+    
 
 }
+.tile{
+ width:fit-content;
+ background-color: orange;
+ align-content: center;
+ justify-content: center;
+ display: block;
+}
 .row {
-    width: 100%;
+    /* width: 100%; */
 }
 .main-img {
     margin: 0 auto;
     background-color:rebeccapurple;
     border: 1px solid brown;
     height: 40%;
-    width: 80%;
+    /* width: 80%; */
+    width:auto;
     align-items: center;
     justify-content: center;
     

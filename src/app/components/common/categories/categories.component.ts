@@ -26,37 +26,11 @@ export class CategoriesComponent {
   {
     label: "Tabs",
     icon: {
-      src: "assets/imgs/bird.png",
+      src: "assets/imgs/sun.svg.png",
       alt: "Laptop"
     }
   },
-  {
-    label: "Phones",
-    icon: {
-      src: "assets/imgs/bird.png",
-      alt: "Laptop"
-    }
-  },
-  {
-    label: "Phones",
-    icon: {
-      src: "assets/imgs/bird.png",
-      alt: "Laptop"
-    }
-  },
-  {
-    label: "Phones",
-    icon: {
-      src: "assets/imgs/bird.png",
-      alt: "Laptop"
-    }
-  },
-  {
-    label: "Tabs",
-    icon: {
-      src: "assets/imgs/bird.png",
-      alt: "Laptop"
-    }
-  },]
+  
+  ]
 
 }

@@ -1,29 +1,20 @@
 <div class="container">
-    <div  class="row align-items-center">
-        <div class="main-img" class="col-sm-4" align="center">
+    <div class="tile row">
+        <div class="col-sm-4" align="center" style="width: 100%;">
             <app-img [img]="product.mainIcon" [imgSize]="'small'"></app-img>
         </div>
-    </div>
-
-    <div class="row align-items-center">    
-        <div class="des"  class="col-sm-4" align="center">
+        <div class="col-sm-4" align="center" style="width: 100%;">
             <app-discription [desc1]="product.desc_p" [desc2]="product.desc_p2"></app-discription>
         </div>
-    </div>
-
-    <div class="row align-items-center">    
-        <div class="des"  class="col-sm-4" align="center">
-         <div class="price"><app-price [priceDiscounted]="product.priceDiscounted" [priceOriginal]="product.priceOriginal"></app-price></div>
+        <div>
+            <div class="col-sm-4  price" align="center" style="width: 100%;"><app-price [priceDiscounted]="product.priceDiscounted" [priceOriginal]="product.priceOriginal"></app-price></div>
         </div>
-    </div>
-    <div class="row align-items-center">   
-        <div class="img-tile" class="col-sm-4" align="center">
+        <div class="col-sm-4 " style="border: yellowgreen 1px solid; width: 100%;" align="center">
             <div style="display: inline-flex;">
                 <app-img  [img]="product.productImgOne"></app-img>
                 <app-img  [img]="product.productImgTwo"></app-img>
                 <app-img  [img]="product.productImgThr"></app-img>
             </div>
-            
         </div>
     </div>
 </div>

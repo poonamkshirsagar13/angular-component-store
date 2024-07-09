@@ -13,7 +13,7 @@ import { InputComponent } from '../common/input/input.component';
 export class HeaderComponent {
   @Input() nameLogo: any = {
     src: 'assets/imgs/home.png',
-    alt: 'Logo Image'
+    alt: 'Logo Imagemnmmmmnmn'
   };
   @Input() profileLogo: any = {
     src: 'assets/imgs/profile.png',
