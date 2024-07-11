@@ -1,4 +1,4 @@
-<div>
+<div >
   <div class="label-row d-flex justify-content-between ">
     <div>
       <app-name-tag [labelName]="Today"></app-name-tag>
@@ -7,8 +7,8 @@
       <app-name-tag [labelName]="viewTo"></app-name-tag>
     </div>
   </div>
-  <div class="youth">
-    <div *ngFor="let prod of products" class="col-sm-4">
+  <div class="d-flex flex-wrap flex-row justify-content-between row" >
+    <div *ngFor="let prod of products"  class="mines-card text-center d-flex justify-content-center col">
       <app-product-tile [product]="prod"></app-product-tile>
     </div>
   </div>

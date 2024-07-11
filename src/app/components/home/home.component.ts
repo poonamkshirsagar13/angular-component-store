@@ -64,6 +64,49 @@ export class HomeComponent {
         alt: "Laptop"
       }
     }],
+    offer: {
+      images: [{
+        logo: {
+          src: 'assets/imgs/alien.png',
+          alt: 'Logo Image'
+        },
+        label:'Alien',
+        labelName:'50%'
+      }, {
+        logo: {
+          src: 'assets/imgs/bird.png',
+          alt: 'Logo Image'
+        },
+        label:'Bird',
+        labelName:'30%'
+      }],
+        slide:{
+          labelName1: "OfferSlide",
+          highlight1: "SlidePrice",
+          desc1: 'Price Today Slide',
+          desc2: 'Discounte Slide',
+          icon1: {
+           src: "assets/imgs/bird.png",
+           alt: "Laptop 1"
+          },
+          labelName2: "2OfferSlide",
+          highlight2: "2SlidePrice",
+          desc3: '2Price Today Slide',
+          desc4: '2Discounte Slide',
+          icon2: {
+           src: "assets/imgs/sun.svg.png",
+           alt: "Laptop 12"
+          },
+          labelName3: "3OfferSlide",
+          highlight3: "3SlidePrice",
+          desc5: '3Price Today Slide',
+          desc6: '3Discounte Slide',
+          icon3: {
+           src: "assets/imgs/city-hall.png",
+           alt: "Laptop 13"
+          },
+      }   
+    },
     products: [
       {
         mainIcon: {
@@ -115,11 +158,10 @@ export class HomeComponent {
   }
 
   ngOnInit(): void {
-    console.log("kdfjdjdkjdkfjdkjfkdjfkdj");
     this.dataServiceService.loadData().subscribe((resp) => {
       this.homePageData.products = [];
       console.log(resp.data);
-      const productsFormatted = resp.data.map((productItem: any ) => {
+      const productsFormatted = resp.data.slice(0, 8).map((productItem: any) => {
         return {
           mainIcon: {
             src: productItem.productImage,
@@ -139,7 +181,7 @@ export class HomeComponent {
           },
           desc_p: productItem.description,
           desc_p2: productItem,
-          priceDiscounted: productItem.price*0.9,
+          priceDiscounted: productItem.price * 0.9,
           priceOriginal: productItem.price,
           label: productItem.productName
         };
@@ -150,18 +192,18 @@ export class HomeComponent {
     this.dataServiceService.categoriesData().subscribe((resp) => {
       this.homePageData.categories = [];
       console.log(resp.data);
-      const categoriesFormat=resp.data.map((categori:any)=>{
-        return{
+      const categoriesFormat = resp.data.slice(0, 3).map((categori: any) => {
+        return {
           label: categori.brand,
           icon: {
-           src: categori.productImage,
-           alt: categori.brand
+            src: categori.productImage,
+            alt: categori.brand
           }
         };
-      }); 
-      console.log("label",categoriesFormat)
+      });
+      console.log("label", categoriesFormat)
       this.homePageData.catagories = categoriesFormat;
-    }); 
+    });
   }
 }
 

@@ -1,4 +1,7 @@
-
+.product-row {
+    width: 100%;
+}
 .youth{
     display: inline-flex;
+    width: 100%;
 }

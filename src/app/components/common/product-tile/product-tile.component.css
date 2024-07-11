@@ -5,8 +5,7 @@
     width: fit-content;
     align-content: center;
     justify-content: center;
-    
-
+    margin-top: 10px;
 }
 .tile{
  width:fit-content;
@@ -20,7 +19,7 @@
 }
 .main-img {
     margin: 0 auto;
-    background-color:rebeccapurple;
+    /* background-color:rebeccapurple; */
     border: 1px solid brown;
     height: 40%;
     /* width: 80%; */

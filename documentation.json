@@ -29,15 +29,124 @@
     "injectables": [
         {
             "name": "DataServiceService",
-            "id": "injectable-DataServiceService-5740bbdb405c0e51f92baa4225b536ba26c7f2bc9fafb8b22a33accf1dc943281fd18abeac3d3a2853dd24d41321cac81aa041616a7684ae0a190d11e7723957",
+            "id": "injectable-DataServiceService-28138a7e72224d8f8b77cd77e4aa55d46be52ec78dd97648105e6a9861fb47f720e8a328a7a8a4391cb317377819282b605d6ef91c496c37ce02c91da783abf5",
             "file": "src/app/service/data-service.service.ts",
             "properties": [],
-            "methods": [],
+            "methods": [
+                {
+                    "name": "categoriesData",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getProductDetail",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "loadData",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "tableData",
+                    "args": [
+                        {
+                            "name": "sortBy",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "orderBy",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "pageNumber",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "defaultValue": "1"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "sortBy",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "orderBy",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "pageNumber",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "defaultValue": "1",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\n\r\n\r\nexport class DataServiceService {\r\n  // constructor() { }\r\n\r\n  constructor(private httpClient: HttpClient) { }\r\n  // tableData(sortBy:string, orderBy:string, pageNumber: number =1):Observable<any> {\r\n  //    return this.httpClient.get(`http://localhost:5000/products?page=${pageNumber}&sortBy=${sortBy}&orderBy=${orderBy}`);\r\n  // }\r\n  // getProductDetail(id: number): Observable<any> {\r\n  //    return this.httpClient.get(`http://localhost:5000/products/${id}`);\r\n  // }\r\n  // loadData():Observable<any>{\r\n  //   return this.httpClient.get(`http://localhost:5000/products`);\r\n  // }\r\n}\r\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\n\r\n\r\nexport class DataServiceService {\r\n  // constructor() { }\r\n\r\n  constructor(private httpClient: HttpClient) { }\r\n  tableData(sortBy:string, orderBy:string, pageNumber: number =1):Observable<any> {\r\n     return this.httpClient.get(`http://localhost:5000/products?page=${pageNumber}&sortBy=${sortBy}&orderBy=${orderBy}`);\r\n  }\r\n  getProductDetail(id: number): Observable<any> {\r\n     return this.httpClient.get(`http://localhost:5000/products/${id}`);\r\n  }\r\n  loadData():Observable<any>{\r\n    return this.httpClient.get(`http://localhost:5000/products`);\r\n  }\r\n  categoriesData():Observable<any>{\r\n    return this.httpClient.get('http://localhost:5000/brands');\r\n  }\r\n}\r\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -471,7 +580,7 @@
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div [style]=\"disStyle\">\r\n    <p>{{desc1}}</p>\r\n    <p>{{desc2}}</p>\r\n</div>\r\n"
+            "templateData": "<div [style]=\"disStyle\" class=\"\">\r\n    <p class=\"p-description\">{{desc1}}</p>\r\n    <p class=\"p-description\">{{desc2}}</p>\r\n</div>\r\n"
         },
         {
             "name": "DisplayImgComponent",
@@ -765,7 +874,7 @@
         },
         {
             "name": "HomeComponent",
-            "id": "component-HomeComponent-3c96334a1b3a60af0e96c908fc641a33fe9783508c21d615eb4331add65d8c2b1ef65383014369dd981db7b155d815469e0484828dbc15efc3bb9c4f88343fdc",
+            "id": "component-HomeComponent-2c2c07c092c8f2653970271d6378e0c54c264fb383f39367dd917f0e18efd3a5c63d6cdc68666856f3835fbc9d2b5b28d4428dafcf8a1d8f4de2bdb69e645fc3",
             "file": "src/app/components/home/home.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -785,7 +894,7 @@
             "propertiesClass": [
                 {
                     "name": "homePageData",
-                    "defaultValue": "{\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n        label: \"Laptop\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Tabs\",\r\n        icon: {\r\n          src: \"assets/imgs/sun.svg.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Phones\",\r\n        icon: {\r\n          src: \"assets/imgs/alien.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n    }],\r\n    products: [{\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    {\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    ],\r\n  }",
+                    "defaultValue": "{\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n      label: \"Laptop\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Tabs\",\r\n      icon: {\r\n        src: \"assets/imgs/sun.svg.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Phones\",\r\n      icon: {\r\n        src: \"assets/imgs/alien.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    }],\r\n    products: [\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n    ],\r\n  }",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "any",
@@ -795,6 +904,16 @@
                     "modifierKind": [
                         125
                     ]
+                },
+                {
+                    "name": "products",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
                 }
             ],
             "methodsClass": [
@@ -804,7 +923,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 116,
+                    "line": 117,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -859,7 +978,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component,Input } from '@angular/core';\r\nimport { HeaderComponent } from '../header/header.component';\r\nimport { DisplayImgComponent } from '../common/display-img/display-img.component';\r\nimport { CategoriesComponent } from '../common/categories/categories.component';\r\nimport { CategoryItemComponent } from '../common/category-item/category-item.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { ProductTileComponent } from '../common/product-tile/product-tile.component';\r\nimport { ProductsComponent } from '../common/products/products.component';\r\nimport { OfferComponent } from '../common/offer/offer.component';\r\nimport { ReleatedComponent } from '../common/releated/releated.component';\r\nimport { DataServiceService } from '../../service/data-service.service';\r\n \r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  standalone: true,\r\n  imports: [\r\n    HeaderComponent, DisplayImgComponent, CategoriesComponent, CategoryItemComponent, NameTagComponent, \r\n    ImgComponent, ProductTileComponent, ProductsComponent, OfferComponent, ReleatedComponent\r\n  ],\r\n  templateUrl: './home.component.html',\r\n  styleUrl: './home.component.css'\r\n})\r\n\r\n\r\nexport class HomeComponent {\r\n  constructor(private dataServiceService: DataServiceService){}\r\n\r\n  public homePageData: any = {\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n        label: \"Laptop\",\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Tabs\",\r\n        icon: {\r\n          src: \"assets/imgs/sun.svg.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n      },\r\n      {\r\n        label: \"Phones\",\r\n        icon: {\r\n          src: \"assets/imgs/alien.png\",\r\n          alt: \"Laptop\"\r\n        }\r\n    }],\r\n    products: [{\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    {\r\n      mainIcon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      },\r\n      label: \"Laptop\",\r\n      desc_p: \"Product is new developed\",\r\n      desc_p2: \"Product Product Product\",\r\n      priceDiscounted: \"$300\",\r\n      priceOriginal: \"$400\",\r\n      productImgOne: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgTwo: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      },\r\n      productImgThr: {\r\n        src: 'assets/imgs/home.png',\r\n        alt: 'Logo Image'\r\n      }\r\n    },\r\n    ],\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    console.log(\"kdfjdjdkjdkfjdkjfkdjfkdj\")\r\n  //  this.dataServiceService.loadData().subscribe((resp)=>{\r\n  //   console.log(resp.data)\r\n  //  }\r\n  }\r\n}\r\n\r\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { HeaderComponent } from '../header/header.component';\r\nimport { DisplayImgComponent } from '../common/display-img/display-img.component';\r\nimport { CategoriesComponent } from '../common/categories/categories.component';\r\nimport { CategoryItemComponent } from '../common/category-item/category-item.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { ProductTileComponent } from '../common/product-tile/product-tile.component';\r\nimport { ProductsComponent } from '../common/products/products.component';\r\nimport { OfferComponent } from '../common/offer/offer.component';\r\nimport { ReleatedComponent } from '../common/releated/releated.component';\r\nimport { DataServiceService } from '../../service/data-service.service';\r\n\r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  standalone: true,\r\n  imports: [\r\n    HeaderComponent, DisplayImgComponent, CategoriesComponent, CategoryItemComponent, NameTagComponent,\r\n    ImgComponent, ProductTileComponent, ProductsComponent, OfferComponent, ReleatedComponent\r\n  ],\r\n  templateUrl: './home.component.html',\r\n  styleUrl: './home.component.css'\r\n})\r\n\r\n\r\nexport class HomeComponent {\r\n  constructor(private dataServiceService: DataServiceService) { }\r\n  products: any[] = [];\r\n  public homePageData: any = {\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n      label: \"Laptop\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Tabs\",\r\n      icon: {\r\n        src: \"assets/imgs/sun.svg.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Phones\",\r\n      icon: {\r\n        src: \"assets/imgs/alien.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    }],\r\n    products: [\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n    ],\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.dataServiceService.loadData().subscribe((resp) => {\r\n      this.homePageData.products = [];\r\n      console.log(resp.data);\r\n      const productsFormatted = resp.data.slice(0,8).map((productItem: any ) => {\r\n        return {\r\n          mainIcon: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgOne: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgTwo: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgThr: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          desc_p: productItem.description,\r\n          desc_p2: productItem,\r\n          priceDiscounted: productItem.price*0.9,\r\n          priceOriginal: productItem.price,\r\n          label: productItem.productName\r\n        };\r\n      });\r\n      this.homePageData.products = productsFormatted;\r\n    });\r\n\r\n    this.dataServiceService.categoriesData().subscribe((resp) => {\r\n      this.homePageData.categories = [];\r\n      console.log(resp.data);\r\n      const categoriesFormat=resp.data.slice(0,3).map((categori:any)=>{\r\n        return{\r\n          label: categori.brand,\r\n          icon: {\r\n           src: categori.productImage,\r\n           alt: categori.brand\r\n          }\r\n        };\r\n      }); \r\n      console.log(\"label\",categoriesFormat)\r\n      this.homePageData.catagories = categoriesFormat;\r\n    }); \r\n  }\r\n}\r\n\r\n",
             "styleUrl": "./home.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
@@ -891,7 +1010,7 @@
                 ]
             },
             "extends": [],
-            "templateData": "<div class=\"home\">\r\n    <app-header \r\n        [label]=\"homePageData.header.label\"\r\n        [nameLogo]=\"homePageData.header.name\"\r\n        [profileLogo]=\"homePageData.header.profile\"\r\n        [cartLogo]=\"homePageData.header.cart\"\r\n    ></app-header>\r\n    <app-categories [cats]=\"homePageData.catagories\"></app-categories>\r\n    <app-offer></app-offer>\r\n    <app-products [products]=\"homePageData.products\"></app-products>\r\n    <app-releated></app-releated>\r\n    \r\n</div>\r\n\r\n"
+            "templateData": "<div class=\"home\">\r\n    <app-header \r\n        [label]=\"homePageData.header.label\"\r\n        [nameLogo]=\"homePageData.header.name\"\r\n        [profileLogo]=\"homePageData.header.profile\"\r\n        [cartLogo]=\"homePageData.header.cart\"\r\n    ></app-header>\r\n    <app-categories [cats]=\"homePageData.catagories\"></app-categories>\r\n    <app-offer></app-offer>\r\n    <app-products  [products]=\"homePageData.products\"></app-products>\r\n    <app-releated></app-releated>\r\n    \r\n</div>\r\n\r\n"
         },
         {
             "name": "ImgComponent",
@@ -1652,7 +1771,7 @@
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div>\r\n  <div class=\"label-row d-flex justify-content-between \">\r\n    <div>\r\n      <app-name-tag [labelName]=\"Today\"></app-name-tag>\r\n    </div>\r\n    <div>\r\n      <app-name-tag [labelName]=\"viewTo\"></app-name-tag>\r\n    </div>\r\n  </div>\r\n  <div class=\"youth\">\r\n    <div *ngFor=\"let prod of products\" class=\"col-sm-4\">\r\n      <app-product-tile [product]=\"prod\"></app-product-tile>\r\n    </div>\r\n  </div>\r\n</div>"
+            "templateData": "<div >\r\n  <div class=\"label-row d-flex justify-content-between \">\r\n    <div>\r\n      <app-name-tag [labelName]=\"Today\"></app-name-tag>\r\n    </div>\r\n    <div>\r\n      <app-name-tag [labelName]=\"viewTo\"></app-name-tag>\r\n    </div>\r\n  </div>\r\n  <div class=\"d-flex flex-wrap flex-row justify-content-between row\" >\r\n    <div *ngFor=\"let prod of products\"  class=\"mines-card text-center d-flex justify-content-center col\">\r\n      <app-product-tile [product]=\"prod\"></app-product-tile>\r\n    </div>\r\n  </div>\r\n</div>"
         },
         {
             "name": "ProductTileComponent",
@@ -1717,7 +1836,7 @@
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"container\">\r\n    <div  class=\"row align-items-center\">\r\n        <div class=\"main-img\" class=\"col-sm-4\" align=\"center\">\r\n            <app-img [img]=\"product.mainIcon\" [imgSize]=\"'small'\"></app-img>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row align-items-center\">    \r\n        <div class=\"des\"  class=\"col-sm-4\" align=\"center\">\r\n            <app-discription [desc1]=\"product.desc_p\" [desc2]=\"product.desc_p2\"></app-discription>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row align-items-center\">    \r\n        <div class=\"des\"  class=\"col-sm-4\" align=\"center\">\r\n         <div class=\"price\"><app-price [priceDiscounted]=\"product.priceDiscounted\" [priceOriginal]=\"product.priceOriginal\"></app-price></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row align-items-center\">   \r\n        <div class=\"img-tile\" class=\"col-sm-4\" align=\"center\">\r\n            <div style=\"display: inline-flex;\">\r\n                <app-img  [img]=\"product.productImgOne\"></app-img>\r\n                <app-img  [img]=\"product.productImgTwo\"></app-img>\r\n                <app-img  [img]=\"product.productImgThr\"></app-img>\r\n            </div>\r\n            \r\n        </div>\r\n    </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"container\">\r\n    <div class=\"tile row\">\r\n        <div class=\"\" align=\"center\" style=\"width: 100%;\">\r\n            <app-img [img]=\"product.mainIcon\" [imgSize]=\"'small'\"></app-img>\r\n        </div>\r\n        <div class=\"\" align=\"center\" style=\"width: 100%;\">\r\n            <app-discription [desc1]=\"product.desc_p\" [desc2]=\"product.desc_p2\"></app-discription>\r\n        </div>\r\n        <div>\r\n            <div class=\"price\" align=\"center\" style=\"width: 100%;\"><app-price [priceDiscounted]=\"product.priceDiscounted\" [priceOriginal]=\"product.priceOriginal\"></app-price></div>\r\n        </div>\r\n        <div class=\"\" style=\"border: yellowgreen 1px solid; width: 100%;\" align=\"center\">\r\n            <div style=\"display: inline-flex;\">\r\n                <app-img  [img]=\"product.productImgOne\"></app-img>\r\n                <app-img  [img]=\"product.productImgTwo\"></app-img>\r\n                <app-img  [img]=\"product.productImgThr\"></app-img>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
         },
         {
             "name": "ReleatedComponent",
@@ -2243,7 +2362,7 @@
                 "linktype": "component",
                 "name": "HomeComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
@@ -2252,7 +2371,7 @@
                 "linktype": "injectable",
                 "name": "DataServiceService",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {
