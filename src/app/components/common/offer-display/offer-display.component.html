@@ -1,4 +1,5 @@
 <div style="background-color: aqua; height: 200px;">
+  {{cat.labelName }}
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -9,36 +10,36 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col">
-                <app-name-tag [labelName]="cat.labelName1"></app-name-tag>
-                <app-discription [desc1]="cat.desc1" [desc2]="cat.desc2"></app-discription>
-                <app-name-tag [labelName]="cat.highlight1"></app-name-tag>
+                <app-name-tag [labelName]="cat[0].labelName"></app-name-tag>
+                <app-discription [desc1]="cat[0].desc" [desc2]="cat[0].desc1"></app-discription>
+                <app-name-tag [labelName]="cat[0].highlight"></app-name-tag>
               </div>
               <div class="col">
-                <app-img [img]="cat.icon1"></app-img>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col">
-                <app-name-tag [labelName]="cat.labelName2"></app-name-tag>
-                <app-discription [desc1]="cat.desc3" [desc2]="cat.desc4"></app-discription>
-                <app-name-tag [labelName]="cat.highlight2"></app-name-tag>
-              </div>
-              <div class="col">
-               <app-img [img]="cat.icon2"></app-img>
+                <app-img [img]="cat[0].icon"></app-img>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
               <div class="col">
-                <app-name-tag [labelName]="cat.labelName3"></app-name-tag>
-                <app-discription [desc1]="cat.desc5" [desc2]="cat.desc6"></app-discription>
-                <app-name-tag [labelName]="cat.highlight3"></app-name-tag>
+                <app-name-tag [labelName]="cat[1].labelName"></app-name-tag>
+                <app-discription [desc1]="cat[1].desc" [desc2]="cat[1].desc1"></app-discription>
+                <app-name-tag [labelName]="cat[1].highlight"></app-name-tag>
               </div>
               <div class="col">
-               <app-img class="d-block w-100" [img]="cat.icon3"></app-img>
+               <app-img [img]="cat[1].icon"></app-img>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <app-name-tag [labelName]="cat[2].labelName"></app-name-tag>
+                <app-discription [desc1]="cat[2].desc" [desc2]="cat[2].desc1"></app-discription>
+                <app-name-tag [labelName]="cat[2].highlight"></app-name-tag>
+              </div>
+              <div class="col">
+               <app-img class="d-block w-100" [img]="cat[2].icon"></app-img>
               </div>
             </div>
           </div>

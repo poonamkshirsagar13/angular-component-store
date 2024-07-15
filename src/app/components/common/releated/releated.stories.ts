@@ -2,6 +2,7 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { ReleatedComponent } from './releated.component';
 
+
 const meta: Meta<ReleatedComponent> = {
     title: 'Releated Component',
     component: ReleatedComponent,
@@ -16,6 +17,6 @@ export default meta;
 type Story = StoryObj<ReleatedComponent>;
 
 export const text: Story = {
-    args: {
-    }
+
+    
 };

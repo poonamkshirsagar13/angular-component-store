@@ -17,32 +17,36 @@ export class OfferDisplayComponent {
    *
    * @required
    */
-  @Input() cat: any = {
-    labelName1: "fun",
-    highlight1: "FunPrice",
-    desc1: 'Price Today',
-    desc2: 'Discounte start',
-    icon1: {
-      src: "assets/imgs/profile.png",
-      alt: "Laptop 1"
-    },
-    labelName2: "Alien",
-    highlight2: "Alien Price",
-    desc3: 'Another planet ',
-    desc4: 'Alience ',
-    icon2: {
-      src: "assets/imgs/alien.png",
-      alt: "Laptop 2"
-    },
-    labelName3: "HeadPhone",
-    highlight3: "With noise canesel  ",
-    desc5: 'with same price  ',
-    desc6: 'earphone ',
-    icon3: {
-      src: "assets/imgs/bird.png",
-      alt: "Laptop 3"
+  @Input() cat: any = [
+    {
+      labelName: "fun",
+      highlight: "FunPrice",
+      desc: 'Price Today',
+      desc1: 'Discounte start',
+      icon: {
+        src: "assets/imgs/profile.png",
+        alt: "Laptop 1"
+      }
+    },{
+      labelName: "Alien",
+      highlight: "Alien Price",
+      desc: 'Another planet ',
+      desc1: 'Alience ',
+      icon: {
+        src: "assets/imgs/alien.png",
+        alt: "Laptop 2"
+      },
+    },{
+      labelName: "HeadPhone",
+      highlight: "With noise canesel  ",
+      desc: 'with same price  ',
+      desc1: 'earphone ',
+      icon: {
+        src: "assets/imgs/bird.png",
+        alt: "Laptop 3"
+      }
     }
-  };
+  ];
 
   changeImage = (count: number) => {
 

@@ -9,7 +9,7 @@
     </div>
     <div class="label-row d-flex">
         <div>
-           <app-display-img></app-display-img>
+           <app-display-img [logo]="relImages.logo" [label]="relImages.label" [labelName]="relImages.labelName"></app-display-img>
         </div>
         <div class="label-row d-flex">
             <div *ngFor="let prod of products" class="col-sm-4">
