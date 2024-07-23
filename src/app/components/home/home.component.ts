@@ -80,32 +80,38 @@ export class HomeComponent {
         label:'Bird',
         labelName:'30%'
       }],
-        slide:{
-          labelName1: "OfferSlide",
-          highlight1: "SlidePrice",
-          desc1: 'Price Today Slide',
-          desc2: 'Discounte Slide',
-          icon1: {
-           src: "assets/imgs/bird.png",
-           alt: "Laptop 1"
-          },
-          labelName2: "2OfferSlide",
-          highlight2: "2SlidePrice",
-          desc3: '2Price Today Slide',
-          desc4: '2Discounte Slide',
-          icon2: {
-           src: "assets/imgs/sun.svg.png",
-           alt: "Laptop 12"
-          },
-          labelName3: "3OfferSlide",
-          highlight3: "3SlidePrice",
-          desc5: '3Price Today Slide',
-          desc6: '3Discounte Slide',
-          icon3: {
-           src: "assets/imgs/city-hall.png",
-           alt: "Laptop 13"
-          },
-      }   
+
+      slide:[
+       {
+        labelName: "fun3",
+        highlight: "FunPrice",
+        desc: 'Price Today',
+        desc1: 'Discounte start',
+        icon: {
+          src: "assets/imgs/profile.png",
+          alt: "Laptop 1"
+        }
+      },{
+        labelName: "Alien2",
+        highlight: "Alien Price",
+        desc: 'Another planet ',
+        desc1: 'Alience ',
+        icon: {
+          src: "assets/imgs/alien.png",
+          alt: "Laptop 2"
+        },
+      },{
+        labelName: "HeadPhone1",
+        highlight: "With noise canesel  ",
+        desc: 'with same price  ',
+        desc1: 'earphone ',
+        icon: {
+          src: "assets/imgs/bird.png",
+          alt: "Laptop 3"
+        }
+
+       }
+      ]  
     },
     products: [
       {
@@ -161,7 +167,7 @@ export class HomeComponent {
     this.dataServiceService.loadData().subscribe((resp) => {
       this.homePageData.products = [];
       console.log(resp.data);
-      const productsFormatted = resp.data.slice(0, 8).map((productItem: any) => {
+      const productsFormatted = resp.data.slice(0, 2).map((productItem: any) => {
         return {
           mainIcon: {
             src: productItem.productImage,

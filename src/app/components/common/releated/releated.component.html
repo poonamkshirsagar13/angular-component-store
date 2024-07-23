@@ -1,5 +1,5 @@
 <div>
-    <div class="label-row d-flex justify-content-between ">
+    <div class="label-row d-flex justify-content-between">
         <div>
           <app-name-tag [labelName]="releated"></app-name-tag>
         </div>
@@ -7,16 +7,13 @@
           <app-name-tag [labelName]="viewTo"></app-name-tag>
         </div>
     </div>
-    <div class="label-row d-flex">
-        <div>
-           <app-display-img [logo]="relImages.logo" [label]="relImages.label" [labelName]="relImages.labelName"></app-display-img>
+    <div class="label-row d-flex justify-content-between">
+      <div *ngFor="let prod of products" class="col-sm-2" (click)="handleClick()">
+        <div (mouseover)="mouseOver(prod.id, true)" (mouseleave)="mouseOver(prod.id, false)" [ngClass]="{
+          'mOver': divOverId == prod.id
+        }" [classList]="'targetTile'">
+          <app-img [img]="prod"></app-img>
         </div>
-        <div class="label-row d-flex">
-            <div *ngFor="let prod of products" class="col-sm-4">
-              <app-img [img]="prod"></app-img>  
-            </div>
-        </div>
-
+      </div>
     </div>
-    
 </div>

@@ -16,7 +16,10 @@ const meta: Meta<ReleatedComponent> = {
 export default meta;
 type Story = StoryObj<ReleatedComponent>;
 
-export const text: Story = {
-
-    
+export const primary: Story = {
+    args: {
+        buttonclick: () => {
+            console.log("mocked click event");
+        }
+    }
 };

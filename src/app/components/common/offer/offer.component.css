@@ -1,11 +1,11 @@
 .row {
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .height {
     padding: 20px;
     /* height: 250px; */
-    background-color: brown;
+    /* background-color: brown; */
     
 }

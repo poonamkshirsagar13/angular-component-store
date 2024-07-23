@@ -2,12 +2,13 @@ import { Component, Input } from '@angular/core';
 import { NameTagComponent } from '../name-tag/name-tag.component';
 import { DiscriptionComponent } from '../discription/discription.component';
 import { ImgComponent } from '../img/img.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-offer-display',
   standalone: true,
-  imports: [NameTagComponent, DiscriptionComponent, ImgComponent],
+  imports: [NameTagComponent, DiscriptionComponent, ImgComponent, CommonModule],
   templateUrl: './offer-display.component.html',
   styleUrl: './offer-display.component.css'
 })

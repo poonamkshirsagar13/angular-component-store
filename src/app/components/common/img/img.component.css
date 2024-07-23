@@ -30,8 +30,9 @@
             }
         }
         .label {
-            background-color: rgba(179, 20, 20, 0.859);
+            background-color:black;
             color: white;
+            white-space: nowrap;
         }
     }
 }
