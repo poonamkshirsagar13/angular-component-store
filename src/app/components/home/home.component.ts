@@ -10,6 +10,7 @@ import { ProductsComponent } from '../common/products/products.component';
 import { OfferComponent } from '../common/offer/offer.component';
 import { ReleatedComponent } from '../common/releated/releated.component';
 import { DataServiceService } from '../../service/data-service.service';
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,7 @@ import { DataServiceService } from '../../service/data-service.service';
   standalone: true,
   imports: [
     HeaderComponent, DisplayImgComponent, CategoriesComponent, CategoryItemComponent, NameTagComponent,
-    ImgComponent, ProductTileComponent, ProductsComponent, OfferComponent, ReleatedComponent
+    ImgComponent, ProductTileComponent, ProductsComponent, OfferComponent, ReleatedComponent,RouterOutlet
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -27,9 +28,9 @@ import { DataServiceService } from '../../service/data-service.service';
 export class HomeComponent {
   constructor(private dataServiceService: DataServiceService) { }
   products: any[] = [];
-  public homePageData: any = {
+  public homePageData: any ={
     header: {
-      label: "Poonam",
+      label: "Default",
       name: {
         src: "assets/imgs/home.png",
         alt: "Logo Image"
@@ -43,173 +44,31 @@ export class HomeComponent {
         alt: "Cart Image"
       }
     },
-    catagories: [{
-      label: "Laptop",
-      icon: {
-        src: "assets/imgs/bird.png",
-        alt: "Laptop"
-      }
-    },
-    {
-      label: "Tabs",
-      icon: {
-        src: "assets/imgs/sun.svg.png",
-        alt: "Laptop"
-      }
-    },
-    {
-      label: "Phones",
-      icon: {
-        src: "assets/imgs/alien.png",
-        alt: "Laptop"
-      }
-    }],
-    offer: {
-      images: [{
-        logo: {
-          src: 'assets/imgs/alien.png',
-          alt: 'Logo Image'
-        },
-        label:'Alien',
-        labelName:'50%'
-      }, {
-        logo: {
-          src: 'assets/imgs/bird.png',
-          alt: 'Logo Image'
-        },
-        label:'Bird',
-        labelName:'30%'
-      }],
-
-      slide:[
-       {
-        labelName: "fun3",
-        highlight: "FunPrice",
-        desc: 'Price Today',
-        desc1: 'Discounte start',
-        icon: {
-          src: "assets/imgs/profile.png",
-          alt: "Laptop 1"
-        }
-      },{
-        labelName: "Alien2",
-        highlight: "Alien Price",
-        desc: 'Another planet ',
-        desc1: 'Alience ',
-        icon: {
-          src: "assets/imgs/alien.png",
-          alt: "Laptop 2"
-        },
-      },{
-        labelName: "HeadPhone1",
-        highlight: "With noise canesel  ",
-        desc: 'with same price  ',
-        desc1: 'earphone ',
-        icon: {
-          src: "assets/imgs/bird.png",
-          alt: "Laptop 3"
-        }
-
-       }
-      ]  
-    },
-    products: [
-      {
-        mainIcon: {
-          src: "assets/imgs/bird.png",
-          alt: "Laptop"
-        },
-        label: "Laptop",
-        desc_p: "Product is new developed",
-        desc_p2: "Product Product Product",
-        priceDiscounted: "$300",
-        priceOriginal: "$400",
-        productImgOne: {
-          src: 'assets/imgs/home.png',
-          alt: 'Logo Image'
-        },
-        productImgTwo: {
-          src: 'assets/imgs/home.png',
-          alt: 'Logo Image'
-        },
-        productImgThr: {
-          src: 'assets/imgs/home.png',
-          alt: 'Logo Image'
-        }
-      },
-      {
-        mainIcon: {
-          src: "assets/imgs/bird.png",
-          alt: "Laptop"
-        },
-        label: "Laptop",
-        desc_p: "Product is new developed",
-        desc_p2: "Product Product Product",
-        priceDiscounted: "$300",
-        priceOriginal: "$400",
-        productImgOne: {
-          src: 'assets/imgs/home.png',
-          alt: 'Logo Image'
-        },
-        productImgTwo: {
-          src: 'assets/imgs/home.png',
-          alt: 'Logo Image'
-        },
-        productImgThr: {
-          src: 'assets/imgs/home.png',
-          alt: 'Logo Image'
-        }
-      },
-    ],
+   
   }
 
   ngOnInit(): void {
     this.dataServiceService.loadData().subscribe((resp) => {
-      this.homePageData.products = [];
-      console.log(resp.data);
-      const productsFormatted = resp.data.slice(0, 2).map((productItem: any) => {
-        return {
-          mainIcon: {
-            src: productItem.productImage,
-            alt: productItem.productName
-          },
-          productImgOne: {
-            src: productItem.productImage,
-            alt: productItem.productName
-          },
-          productImgTwo: {
-            src: productItem.productImage,
-            alt: productItem.productName
-          },
-          productImgThr: {
-            src: productItem.productImage,
-            alt: productItem.productName
-          },
-          desc_p: productItem.description,
-          desc_p2: productItem,
-          priceDiscounted: productItem.price * 0.9,
-          priceOriginal: productItem.price,
-          label: productItem.productName
-        };
+      let header: any= {
+        label: "BykeStore"
+      };
+      let config = {
+        indexKey: [{
+          key: "name"
+        },{
+          key: "profile"
+        },{
+          key: "cart"
+        }]
+      }
+      console.log("jjj",resp.data);
+      resp.data.forEach((productItem:any, index: number)=> {
+        if (index < config.indexKey.length) {
+          header[`${config.indexKey[index].key}`] = { src: productItem.productImage }
+        }
       });
-      this.homePageData.products = productsFormatted;
-    });
-
-    this.dataServiceService.categoriesData().subscribe((resp) => {
-      this.homePageData.categories = [];
-      console.log(resp.data);
-      const categoriesFormat = resp.data.slice(0, 3).map((categori: any) => {
-        return {
-          label: categori.brand,
-          icon: {
-            src: categori.productImage,
-            alt: categori.brand
-          }
-        };
-      });
-      console.log("label", categoriesFormat)
-      this.homePageData.catagories = categoriesFormat;
+      console.log(header);
+      this.homePageData.header = header;
     });
   }
 }
-

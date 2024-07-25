@@ -1,7 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,Output,EventEmitter } from '@angular/core';
 import { ImgComponent } from '../common/img/img.component';
 import { NameTagComponent } from '../common/name-tag/name-tag.component';
 import { InputComponent } from '../common/input/input.component';
+import { zip } from 'rxjs';
+import { url } from 'inspector';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +14,8 @@ import { InputComponent } from '../common/input/input.component';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(private router:Router) { }
+  @Output() buttonclick = new EventEmitter();
   @Input() nameLogo: any = {
     src: 'assets/imgs/home.png',
     alt: 'Logo Imagemnmmmmnmn'
@@ -24,5 +29,10 @@ export class HeaderComponent {
     alt: 'cartLogo Image'
   };
   @Input() label:string = "SUPER"
+
+  handleClick(){
+    console.log("cart");
+    this.router.navigate([('/cart')]);
+  }
   
 }

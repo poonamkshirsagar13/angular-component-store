@@ -381,6 +381,44 @@
             }
         },
         {
+            "name": "CartComponent",
+            "id": "component-CartComponent-3c8ba27f3b57a0eef7e02ab1d8ee54f9ac35d249cc26d2ad7eb9c3af4f197db2d63ffd53b30d37ddafc65f7346cb92b08d26fac9bcc71e4137dc5e89cce5b86a",
+            "file": "src/app/components/common/cart/cart.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-cart",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./cart.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-cart',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './cart.component.html',\r\n  styleUrl: './cart.component.css'\r\n})\r\nexport class CartComponent {\r\n\r\n}\r\n",
+            "styleUrl": "./cart.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p>cart works!</p>\r\n"
+        },
+        {
             "name": "CategoriesComponent",
             "id": "component-CategoriesComponent-59661a78544c66fbe42a9716f12771c4ace5e6203e2e45cd34217623184ad7ca8e2bf1066eb6570aebef70c06be39fea3b58c4a341029ed8b3177544f53a4555",
             "file": "src/app/components/common/categories/categories.component.ts",
@@ -493,6 +531,149 @@
             "stylesData": "",
             "extends": [],
             "templateData": "<div class=\"row\">\r\n    <div class=\"catagoryRow align-items-center d-flex flex-row\">\r\n        <div class=\"catagoryLabel p-2\">\r\n            <app-name-tag [labelName]=\"cat.label\"></app-name-tag>\r\n        </div>\r\n        <div class=\"catagoryImg\">\r\n            <app-img [img]=\"cat.icon\" [imgSize]=\"'small'\"></app-img>\r\n        </div>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "DashBoardComponent",
+            "id": "component-DashBoardComponent-4b5aea5b4d30fc67ecdd3714c73e95d9ac226799e2c6db86c6b4e1e0c828f650357c7515ea910fba89a2eae27831adc979fade8894b9124548857880048f1ed6",
+            "file": "src/app/components/dash-board/dash-board.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-dash-board",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./dash-board.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "homePageData",
+                    "defaultValue": "{\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n      label: \"Laptop\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Tabs\",\r\n      icon: {\r\n        src: \"assets/imgs/sun.svg.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Phones\",\r\n      icon: {\r\n        src: \"assets/imgs/alien.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    }],\r\n    offer: {\r\n      images: [{\r\n        logo: {\r\n          src: 'assets/imgs/alien.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Alien',\r\n        labelName:'50%'\r\n      }, {\r\n        logo: {\r\n          src: 'assets/imgs/bird.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Bird',\r\n        labelName:'30%'\r\n      }],\r\n\r\n      slide:[\r\n       {\r\n        labelName: \"fun3\",\r\n        highlight: \"FunPrice\",\r\n        desc: 'Price Today',\r\n        desc1: 'Discounte start',\r\n        icon: {\r\n          src: \"assets/imgs/profile.png\",\r\n          alt: \"Laptop 1\"\r\n        }\r\n      },{\r\n        labelName: \"Alien2\",\r\n        highlight: \"Alien Price\",\r\n        desc: 'Another planet ',\r\n        desc1: 'Alience ',\r\n        icon: {\r\n          src: \"assets/imgs/alien.png\",\r\n          alt: \"Laptop 2\"\r\n        },\r\n      },{\r\n        labelName: \"HeadPhone1\",\r\n        highlight: \"With noise canesel  \",\r\n        desc: 'with same price  ',\r\n        desc1: 'earphone ',\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop 3\"\r\n        }\r\n\r\n       }\r\n      ]  \r\n    },\r\n    products: [\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n    ],\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "products",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 165,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "HeaderComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "DisplayImgComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CategoriesComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CategoryItemComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "NameTagComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ImgComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ProductTileComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ProductsComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "OfferComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ReleatedComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "RouterOutlet"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { HeaderComponent } from '../header/header.component';\r\nimport { DisplayImgComponent } from '../common/display-img/display-img.component';\r\nimport { CategoriesComponent } from '../common/categories/categories.component';\r\nimport { CategoryItemComponent } from '../common/category-item/category-item.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { ProductTileComponent } from '../common/product-tile/product-tile.component';\r\nimport { ProductsComponent } from '../common/products/products.component';\r\nimport { OfferComponent } from '../common/offer/offer.component';\r\nimport { ReleatedComponent } from '../common/releated/releated.component';\r\nimport { DataServiceService } from '../../service/data-service.service';\r\nimport { RouterOutlet } from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-dash-board',\r\n  standalone: true,\r\n  imports: [\r\n    HeaderComponent, DisplayImgComponent, CategoriesComponent, CategoryItemComponent, NameTagComponent,\r\n    ImgComponent, ProductTileComponent, ProductsComponent, OfferComponent, ReleatedComponent,\r\n    RouterOutlet\r\n  ],\r\n  templateUrl: './dash-board.component.html',\r\n  styleUrl: './dash-board.component.css'\r\n})\r\nexport class DashBoardComponent {\r\n  constructor(private dataServiceService: DataServiceService) { }\r\n  products: any[] = [];\r\n  public homePageData: any = {\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n      label: \"Laptop\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Tabs\",\r\n      icon: {\r\n        src: \"assets/imgs/sun.svg.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Phones\",\r\n      icon: {\r\n        src: \"assets/imgs/alien.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    }],\r\n    offer: {\r\n      images: [{\r\n        logo: {\r\n          src: 'assets/imgs/alien.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Alien',\r\n        labelName:'50%'\r\n      }, {\r\n        logo: {\r\n          src: 'assets/imgs/bird.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Bird',\r\n        labelName:'30%'\r\n      }],\r\n\r\n      slide:[\r\n       {\r\n        labelName: \"fun3\",\r\n        highlight: \"FunPrice\",\r\n        desc: 'Price Today',\r\n        desc1: 'Discounte start',\r\n        icon: {\r\n          src: \"assets/imgs/profile.png\",\r\n          alt: \"Laptop 1\"\r\n        }\r\n      },{\r\n        labelName: \"Alien2\",\r\n        highlight: \"Alien Price\",\r\n        desc: 'Another planet ',\r\n        desc1: 'Alience ',\r\n        icon: {\r\n          src: \"assets/imgs/alien.png\",\r\n          alt: \"Laptop 2\"\r\n        },\r\n      },{\r\n        labelName: \"HeadPhone1\",\r\n        highlight: \"With noise canesel  \",\r\n        desc: 'with same price  ',\r\n        desc1: 'earphone ',\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop 3\"\r\n        }\r\n\r\n       }\r\n      ]  \r\n    },\r\n    products: [\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n    ],\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.dataServiceService.loadData().subscribe((resp) => {\r\n      this.homePageData.products = [];\r\n      console.log(resp.data);\r\n      const productsFormatted = resp.data.slice(0, 2).map((productItem: any) => {\r\n        return {\r\n          mainIcon: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgOne: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgTwo: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgThr: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          desc_p: productItem.description,\r\n          desc_p2: productItem,\r\n          priceDiscounted: productItem.price * 0.9,\r\n          priceOriginal: productItem.price,\r\n          label: productItem.productName\r\n        };\r\n      });\r\n      this.homePageData.products = productsFormatted;\r\n    });\r\n\r\n    this.dataServiceService.categoriesData().subscribe((resp) => {\r\n      this.homePageData.categories = [];\r\n      console.log(resp.data);\r\n      const categoriesFormat = resp.data.slice(0, 3).map((categori: any) => {\r\n        return {\r\n          label: categori.brand,\r\n          icon: {\r\n            src: categori.productImage,\r\n            alt: categori.brand\r\n          }\r\n        };\r\n      });\r\n      console.log(\"label\", categoriesFormat)\r\n      this.homePageData.catagories = categoriesFormat;\r\n    });\r\n  }\r\n\r\n}\r\n",
+            "styleUrl": "./dash-board.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "dataServiceService",
+                        "type": "DataServiceService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 26,
+                "jsdoctags": [
+                    {
+                        "name": "dataServiceService",
+                        "type": "DataServiceService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "templateData": "<p>dash-board works!</p>\r\n    <app-categories [cats]=\"homePageData.catagories\"></app-categories>\r\n    <app-offer></app-offer>\r\n    <app-products  [products]=\"homePageData.products\"></app-products>\r\n    <app-releated></app-releated>"
         },
         {
             "name": "DiscriptionComponent",
@@ -783,7 +964,7 @@
         },
         {
             "name": "HeaderComponent",
-            "id": "component-HeaderComponent-d493a179fa035a2140ca688d0b7bbab7e6413dc6cf11d9f86dbe82a555d2032bcdd925d0297471b088aab1ee382f6ed3f29c63baa15d9efef487aa96b1eab809-1",
+            "id": "component-HeaderComponent-f4f97627d7d678dfc5d63c8565b95970093dab672da715d2f261110e0618802d77fd2c070a0c7eb9ee9a7b16b333d6cdc9b4e678546f6cb6e97812f2dc092894-1",
             "file": "src/app/components/header/header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -804,7 +985,7 @@
                     "defaultValue": "{\r\n    src: 'assets/imgs/cart.svg',\r\n    alt: 'cartLogo Image'\r\n  }",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 22,
+                    "line": 27,
                     "type": "any",
                     "decorators": []
                 },
@@ -813,7 +994,7 @@
                     "defaultValue": "\"SUPER\"",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 31,
                     "type": "string",
                     "decorators": []
                 },
@@ -822,7 +1003,7 @@
                     "defaultValue": "{\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Imagemnmmmmnmn'\r\n  }",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "line": 19,
                     "type": "any",
                     "decorators": []
                 },
@@ -831,14 +1012,34 @@
                     "defaultValue": "{\r\n    src: 'assets/imgs/profile.png',\r\n    alt: 'profileLogo Image'\r\n  }",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 23,
                     "type": "any",
                     "decorators": []
                 }
             ],
-            "outputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "buttonclick",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "handleClick",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -861,20 +1062,46 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { InputComponent } from '../common/input/input.component';\r\n\r\n@Component({\r\n  selector: 'app-header',\r\n  standalone: true,\r\n  imports: [ImgComponent,NameTagComponent,InputComponent],\r\n  templateUrl: './header.component.html',\r\n  styleUrl: './header.component.css'\r\n})\r\nexport class HeaderComponent {\r\n  @Input() nameLogo: any = {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Imagemnmmmmnmn'\r\n  };\r\n  @Input() profileLogo: any = {\r\n    src: 'assets/imgs/profile.png',\r\n    alt: 'profileLogo Image'\r\n  };\r\n  @Input() cartLogo: any = {\r\n    src: 'assets/imgs/cart.svg',\r\n    alt: 'cartLogo Image'\r\n  };\r\n  @Input() label:string = \"SUPER\"\r\n  \r\n}\r\n",
+            "sourceCode": "import { Component, Input,Output,EventEmitter } from '@angular/core';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { InputComponent } from '../common/input/input.component';\r\nimport { zip } from 'rxjs';\r\nimport { url } from 'inspector';\r\nimport { Router } from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-header',\r\n  standalone: true,\r\n  imports: [ImgComponent,NameTagComponent,InputComponent],\r\n  templateUrl: './header.component.html',\r\n  styleUrl: './header.component.css'\r\n})\r\nexport class HeaderComponent {\r\n  constructor(private router:Router) { }\r\n  @Output() buttonclick = new EventEmitter();\r\n  @Input() nameLogo: any = {\r\n    src: 'assets/imgs/home.png',\r\n    alt: 'Logo Imagemnmmmmnmn'\r\n  };\r\n  @Input() profileLogo: any = {\r\n    src: 'assets/imgs/profile.png',\r\n    alt: 'profileLogo Image'\r\n  };\r\n  @Input() cartLogo: any = {\r\n    src: 'assets/imgs/cart.svg',\r\n    alt: 'cartLogo Image'\r\n  };\r\n  @Input() label:string = \"SUPER\"\r\n\r\n  handleClick(){\r\n    console.log(\"cart\");\r\n    this.router.navigate([('/cart')]);\r\n  }\r\n  \r\n}\r\n",
             "styleUrl": "./header.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 16,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
             "extends": [],
             "isDuplicate": true,
             "duplicateId": 1,
             "duplicateName": "HeaderComponent-1",
-            "templateData": "<div class=\"header\">\r\n    <div class=\"left-header\">\r\n        <div class=\"name-tag\"><app-name-tag [labelName]=\"label\"></app-name-tag></div>\r\n        <div class=\"image-tag\"><app-img [img]=\"nameLogo\" imgSize=\"small\"></app-img></div>\r\n    </div>\r\n    <div class=\"middle-header\">\r\n      <div class=\"search\"><app-input></app-input></div> \r\n    </div>\r\n    <div class=\"right-header\">\r\n        <div><app-img [img]=\"profileLogo\" imgSize=\"small\"></app-img></div>\r\n        <div><app-img [img]=\"cartLogo\" imgSize=\"small\"></app-img></div>\r\n    </div>\r\n    \r\n</div>"
+            "templateData": "<div class=\"header\">\r\n    <div class=\"left-header\">\r\n        <div class=\"name-tag\"><app-name-tag [labelName]=\"label\"></app-name-tag></div>\r\n        <div class=\"image-tag\"><app-img [img]=\"nameLogo\" imgSize=\"small\"></app-img></div>\r\n    </div>\r\n    <div class=\"middle-header\">\r\n      <div class=\"search\"><app-input></app-input></div> \r\n    </div>\r\n    <div class=\"right-header\">\r\n        <div><app-img [img]=\"profileLogo\" imgSize=\"small\"></app-img></div>\r\n        <div ><app-img [img]=\"cartLogo\" imgSize=\"small\" (click)=\"handleClick()\" ></app-img></div>\r\n    </div>\r\n</div>"
         },
         {
             "name": "HomeComponent",
-            "id": "component-HomeComponent-b0d9fbccb54ed06bb1d2c2ff2cec344ae5ff6b753b3873de566157458431e10c0b0e84c3bd5def38d575eab13b5b337ec4d4a438d882efc4297f1942fdb04932",
+            "id": "component-HomeComponent-0bb0c987cd89b1fd33d0d48a7275431d649917deee6c405b5063dfccabb4abe701a2647f2b18fc041492a3b55d8545e4becc31087281bead5097d014672abc6c",
             "file": "src/app/components/home/home.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -894,13 +1121,13 @@
             "propertiesClass": [
                 {
                     "name": "homePageData",
-                    "defaultValue": "{\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n      label: \"Laptop\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Tabs\",\r\n      icon: {\r\n        src: \"assets/imgs/sun.svg.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Phones\",\r\n      icon: {\r\n        src: \"assets/imgs/alien.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    }],\r\n    offer: {\r\n      images: [{\r\n        logo: {\r\n          src: 'assets/imgs/alien.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Alien',\r\n        labelName:'50%'\r\n      }, {\r\n        logo: {\r\n          src: 'assets/imgs/bird.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Bird',\r\n        labelName:'30%'\r\n      }],\r\n\r\n      slide:[\r\n       {\r\n        labelName: \"fun3\",\r\n        highlight: \"FunPrice\",\r\n        desc: 'Price Today',\r\n        desc1: 'Discounte start',\r\n        icon: {\r\n          src: \"assets/imgs/profile.png\",\r\n          alt: \"Laptop 1\"\r\n        }\r\n      },{\r\n        labelName: \"Alien2\",\r\n        highlight: \"Alien Price\",\r\n        desc: 'Another planet ',\r\n        desc1: 'Alience ',\r\n        icon: {\r\n          src: \"assets/imgs/alien.png\",\r\n          alt: \"Laptop 2\"\r\n        },\r\n      },{\r\n        labelName: \"HeadPhone1\",\r\n        highlight: \"With noise canesel  \",\r\n        desc: 'with same price  ',\r\n        desc1: 'earphone ',\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop 3\"\r\n        }\r\n\r\n       }\r\n      ]  \r\n    },\r\n    products: [\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n    ],\r\n  }",
+                    "defaultValue": "{\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n   \r\n  }",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "any",
                     "optional": false,
                     "description": "",
-                    "line": 30,
+                    "line": 31,
                     "modifierKind": [
                         125
                     ]
@@ -913,7 +1140,7 @@
                     "type": "any[]",
                     "optional": false,
                     "description": "",
-                    "line": 29
+                    "line": 30
                 }
             ],
             "methodsClass": [
@@ -923,7 +1150,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 166,
+                    "line": 50,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -973,12 +1200,15 @@
                 {
                     "name": "ReleatedComponent",
                     "type": "component"
+                },
+                {
+                    "name": "RouterOutlet"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { HeaderComponent } from '../header/header.component';\r\nimport { DisplayImgComponent } from '../common/display-img/display-img.component';\r\nimport { CategoriesComponent } from '../common/categories/categories.component';\r\nimport { CategoryItemComponent } from '../common/category-item/category-item.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { ProductTileComponent } from '../common/product-tile/product-tile.component';\r\nimport { ProductsComponent } from '../common/products/products.component';\r\nimport { OfferComponent } from '../common/offer/offer.component';\r\nimport { ReleatedComponent } from '../common/releated/releated.component';\r\nimport { DataServiceService } from '../../service/data-service.service';\r\n\r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  standalone: true,\r\n  imports: [\r\n    HeaderComponent, DisplayImgComponent, CategoriesComponent, CategoryItemComponent, NameTagComponent,\r\n    ImgComponent, ProductTileComponent, ProductsComponent, OfferComponent, ReleatedComponent\r\n  ],\r\n  templateUrl: './home.component.html',\r\n  styleUrl: './home.component.css'\r\n})\r\n\r\n\r\nexport class HomeComponent {\r\n  constructor(private dataServiceService: DataServiceService) { }\r\n  products: any[] = [];\r\n  public homePageData: any = {\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n    catagories: [{\r\n      label: \"Laptop\",\r\n      icon: {\r\n        src: \"assets/imgs/bird.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Tabs\",\r\n      icon: {\r\n        src: \"assets/imgs/sun.svg.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    },\r\n    {\r\n      label: \"Phones\",\r\n      icon: {\r\n        src: \"assets/imgs/alien.png\",\r\n        alt: \"Laptop\"\r\n      }\r\n    }],\r\n    offer: {\r\n      images: [{\r\n        logo: {\r\n          src: 'assets/imgs/alien.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Alien',\r\n        labelName:'50%'\r\n      }, {\r\n        logo: {\r\n          src: 'assets/imgs/bird.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        label:'Bird',\r\n        labelName:'30%'\r\n      }],\r\n\r\n      slide:[\r\n       {\r\n        labelName: \"fun3\",\r\n        highlight: \"FunPrice\",\r\n        desc: 'Price Today',\r\n        desc1: 'Discounte start',\r\n        icon: {\r\n          src: \"assets/imgs/profile.png\",\r\n          alt: \"Laptop 1\"\r\n        }\r\n      },{\r\n        labelName: \"Alien2\",\r\n        highlight: \"Alien Price\",\r\n        desc: 'Another planet ',\r\n        desc1: 'Alience ',\r\n        icon: {\r\n          src: \"assets/imgs/alien.png\",\r\n          alt: \"Laptop 2\"\r\n        },\r\n      },{\r\n        labelName: \"HeadPhone1\",\r\n        highlight: \"With noise canesel  \",\r\n        desc: 'with same price  ',\r\n        desc1: 'earphone ',\r\n        icon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop 3\"\r\n        }\r\n\r\n       }\r\n      ]  \r\n    },\r\n    products: [\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n      {\r\n        mainIcon: {\r\n          src: \"assets/imgs/bird.png\",\r\n          alt: \"Laptop\"\r\n        },\r\n        label: \"Laptop\",\r\n        desc_p: \"Product is new developed\",\r\n        desc_p2: \"Product Product Product\",\r\n        priceDiscounted: \"$300\",\r\n        priceOriginal: \"$400\",\r\n        productImgOne: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgTwo: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        },\r\n        productImgThr: {\r\n          src: 'assets/imgs/home.png',\r\n          alt: 'Logo Image'\r\n        }\r\n      },\r\n    ],\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.dataServiceService.loadData().subscribe((resp) => {\r\n      this.homePageData.products = [];\r\n      console.log(resp.data);\r\n      const productsFormatted = resp.data.slice(0, 2).map((productItem: any) => {\r\n        return {\r\n          mainIcon: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgOne: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgTwo: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          productImgThr: {\r\n            src: productItem.productImage,\r\n            alt: productItem.productName\r\n          },\r\n          desc_p: productItem.description,\r\n          desc_p2: productItem,\r\n          priceDiscounted: productItem.price * 0.9,\r\n          priceOriginal: productItem.price,\r\n          label: productItem.productName\r\n        };\r\n      });\r\n      this.homePageData.products = productsFormatted;\r\n    });\r\n\r\n    this.dataServiceService.categoriesData().subscribe((resp) => {\r\n      this.homePageData.categories = [];\r\n      console.log(resp.data);\r\n      const categoriesFormat = resp.data.slice(0, 3).map((categori: any) => {\r\n        return {\r\n          label: categori.brand,\r\n          icon: {\r\n            src: categori.productImage,\r\n            alt: categori.brand\r\n          }\r\n        };\r\n      });\r\n      console.log(\"label\", categoriesFormat)\r\n      this.homePageData.catagories = categoriesFormat;\r\n    });\r\n  }\r\n}\r\n\r\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { HeaderComponent } from '../header/header.component';\r\nimport { DisplayImgComponent } from '../common/display-img/display-img.component';\r\nimport { CategoriesComponent } from '../common/categories/categories.component';\r\nimport { CategoryItemComponent } from '../common/category-item/category-item.component';\r\nimport { NameTagComponent } from '../common/name-tag/name-tag.component';\r\nimport { ImgComponent } from '../common/img/img.component';\r\nimport { ProductTileComponent } from '../common/product-tile/product-tile.component';\r\nimport { ProductsComponent } from '../common/products/products.component';\r\nimport { OfferComponent } from '../common/offer/offer.component';\r\nimport { ReleatedComponent } from '../common/releated/releated.component';\r\nimport { DataServiceService } from '../../service/data-service.service';\r\nimport { RouterOutlet } from '@angular/router';\r\n\r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  standalone: true,\r\n  imports: [\r\n    HeaderComponent, DisplayImgComponent, CategoriesComponent, CategoryItemComponent, NameTagComponent,\r\n    ImgComponent, ProductTileComponent, ProductsComponent, OfferComponent, ReleatedComponent,RouterOutlet\r\n  ],\r\n  templateUrl: './home.component.html',\r\n  styleUrl: './home.component.css'\r\n})\r\n\r\n\r\nexport class HomeComponent {\r\n  constructor(private dataServiceService: DataServiceService) { }\r\n  products: any[] = [];\r\n  public homePageData: any ={\r\n    header: {\r\n      label: \"Poonam\",\r\n      name: {\r\n        src: \"assets/imgs/home.png\",\r\n        alt: \"Logo Image\"\r\n      },\r\n      profile: {\r\n        src: \"assets/imgs/profile.png\",\r\n        alt: \"Profile Image\"\r\n      },\r\n      cart: {\r\n        src: \"assets/imgs/cart.svg\",\r\n        alt: \"Cart Image\"\r\n      }\r\n    },\r\n   \r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.dataServiceService.loadData().subscribe((resp) => {\r\n      this.homePageData= {};\r\n      console.log(\"jjj\",resp.data);\r\n      const productsFormatted = resp.data.forEach((productItem:any)=> {\r\n        return {\r\n          header: {\r\n            label: productItem.productName,\r\n            name: {\r\n              src: productItem.productImage,\r\n              alt: productItem.productName\r\n            },\r\n            profile: {\r\n              src: productItem.productImage,\r\n              alt: productItem.productName\r\n            },\r\n            cart: {\r\n              src: productItem.productImage,\r\n              alt: productItem.productName\r\n            },\r\n          }\r\n        }\r\n      });\r\n      console.log(\"ee\",productsFormatted)\r\n      this.homePageData = productsFormatted;\r\n    });\r\n  }\r\n}\r\n\r\n",
             "styleUrl": "./home.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
@@ -996,7 +1226,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 27,
+                "line": 28,
                 "jsdoctags": [
                     {
                         "name": "dataServiceService",
@@ -1010,7 +1240,7 @@
                 ]
             },
             "extends": [],
-            "templateData": "<div class=\"home\">\r\n    <app-header \r\n        [label]=\"homePageData.header.label\"\r\n        [nameLogo]=\"homePageData.header.name\"\r\n        [profileLogo]=\"homePageData.header.profile\"\r\n        [cartLogo]=\"homePageData.header.cart\"\r\n    ></app-header>\r\n    <app-categories [cats]=\"homePageData.catagories\"></app-categories>\r\n    <app-offer></app-offer>\r\n    <app-products  [products]=\"homePageData.products\"></app-products>\r\n    <app-releated></app-releated>\r\n    \r\n</div>\r\n\r\n"
+            "templateData": "<div class=\"home\">\r\n    <app-header \r\n        [label]=\"homePageData.header.label\"\r\n        [nameLogo]=\"homePageData.header.name\"\r\n        [profileLogo]=\"homePageData.header.profile\"\r\n        [cartLogo]=\"homePageData.header.cart\"\r\n    ></app-header>\r\n    <router-outlet></router-outlet>\r\n</div>\r\n\r\n"
         },
         {
             "name": "ImgComponent",
@@ -1430,7 +1660,7 @@
                 ]
             },
             "extends": [],
-            "templateData": "<div class=\"row\">\r\n   <div class=\"col-3\" style=\"border: 3px solid black;\">\r\n      <app-offer-img [offerImages]=\"offer.images\"></app-offer-img>\r\n   </div>\r\n   <div class=\"col-9\"style=\"border: 3px solid blue;\">\r\n      <app-offer-display [cat]=\"offer.cat\" ></app-offer-display>\r\n   </div>\r\n</div>"
+            "templateData": "<div class=\"row\">\r\n   <div class=\"col-3\" >\r\n      <app-offer-img [offerImages]=\"offer.images\"></app-offer-img>\r\n   </div>\r\n   <div class=\"col-9\">\r\n      <app-offer-display [cat]=\"offer.cat\" ></app-offer-display>\r\n   </div>\r\n</div>"
         },
         {
             "name": "OfferDisplayComponent",
@@ -2242,7 +2472,44 @@
             "templateData": "<div class=\"container\">\r\n    <div><app-img></app-img></div>\r\n    <div class=\"des\"><app-discription></app-discription></div>\r\n    <div class=\"price-tag\">\r\n        <div><app-price></app-price></div>\r\n        <div><app-price></app-price></div>\r\n    </div>\r\n    <div class=\"imgs\">\r\n        <div><app-img></app-img></div>\r\n        <div><app-img></app-img></div>\r\n        <div><app-img></app-img></div>\r\n    </div>\r\n</div>\r\n"
         }
     ],
-    "modules": [],
+    "modules": [
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-f38ff0edbfed55f05384599b0fdf5422c4a6f39228f5504ee413208b1eedc19795044123427f764c10b6c7f46495b247d90d3384166d4830ff75b02782577cd8",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.routes.ts",
+            "methods": [],
+            "sourceCode": "import { RouterModule, Routes } from '@angular/router';\r\nimport { NgModule } from '@angular/core';\r\nimport { CartComponent } from './components/common/cart/cart.component';\r\nimport { DashBoardComponent } from './components/dash-board/dash-board.component';\r\n\r\nexport const routes: Routes = [\r\n  {path:'',component:DashBoardComponent,pathMatch:'full'},\r\n  {path:'home',component:DashBoardComponent,pathMatch:'full'},\r\n  {path:'cart',component:CartComponent,pathMatch:'full'},\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class AppRoutingModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
     "miscellaneous": {
         "variables": [
             {
@@ -2343,7 +2610,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 9,
+        "count": 8,
         "status": "low",
         "files": [
             {
@@ -2381,6 +2648,15 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/common/cart/cart.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CartComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -2530,6 +2806,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/dash-board/dash-board.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DashBoardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/footer/footer.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2544,7 +2829,7 @@
                 "linktype": "component",
                 "name": "HeaderComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/8",
                 "status": "low"
             },
             {
